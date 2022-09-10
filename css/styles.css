@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Colores*/
+.color1 {
+    background-color: rgb(88, 88, 88);
+}
+.color2 {
+    background-color: rgb(143, 142, 142);
+}
+
+/*Cajas*/
+.caja1 {
+    padding: 10px;
+    margin: 2px;
+}
+.caja2 {
+    margin-top: 20px;
+}
+.caja3 {
+    margin-top: 200px;
+}
+.borde {
+    border-radius: 5px;
+    border: 2px black solid;
+}
+
+/**/
+.tamaño1 {
+    height: 150px;
+}
+.tamaño2 {
+    height: 200px;
+}
+.tamaño3 {
+    height: 250px;
+}
+.tamaño4 {
+    height: 100px;
+}
+
+/*Fondos*/
+.fondo1 {
+    background-color: rgb(190, 188, 188);
+    border: 2px black solid;
+}
+.fondo2 {
+    background-color: rgb(39, 39, 39);
+    border: 2px black solid;
+}
