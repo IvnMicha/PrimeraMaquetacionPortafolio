@@ -12,17 +12,23 @@
 
 /*Cajas*/
 .caja1 {
-    padding: 10px;
-    margin: 2px;
+    padding-top: 10px;
+    padding-right: 0px;
 }
 .caja2 {
     margin-top: 20px;
 }
 .caja3 {
-    margin-top: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 .borde {
     border-radius: 5px;
+    border: 2px black solid;
+}
+.borde2 {
     border: 2px black solid;
 }
 
@@ -31,7 +37,7 @@
     height: 150px;
 }
 .tamaño2 {
-    height: 200px;
+    height: 250px;
 }
 .tamaño3 {
     height: 250px;
@@ -48,4 +54,9 @@
 .fondo2 {
     background-color: rgb(39, 39, 39);
     border: 2px black solid;
+}
+
+h5 {
+    text-align: center;
+    padding: 5px;
 }
