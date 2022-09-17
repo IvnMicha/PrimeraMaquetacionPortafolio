@@ -23,9 +23,6 @@
   </head>
   <body>
 
-<!--JavaScript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
 <!--Cabeza de la pagina-->
     <header class="container-fluid">
         <div class="row fondo1 tamaño1 g-2">
@@ -58,107 +55,327 @@
 
 <!--Barra de navegacion-->
     <nav class="container-fluid caja2">
-      <div class="row g-4 justify-content-center">
+      <div class="row justify-content-center borde2">
         <div class="col-8 col-sm-8 col-md-8 col-lg-8 overflow-auto">
-          <ul class="pagination pagination-lg">
-            <li class="page-item">
-              <a class="page-link" href="#">Ilustracion</a>
+          <ul class="pagination pagination-lg espacio" id="myTab" role="tablist">
+            
+            <!--Boton Ilustracion-->
+            <li class="page-item" role="presentation">
+              <button class="boton" id="ilustracion-tab" data-bs-toggle="tab" data-bs-target="#ilustracion-tab-pane" type="button" role="tab" aria-controls="ilustracion-tab-pane" aria-selected="true">Ilustración</button>
             </li>
-            <li class="page-item">
-              <a class="page-link" href="#">Ilustracion</a>
+
+            <!--Boton Invitaciones-->
+            <li class="page-item" role="presentation">
+              <button class="boton" id="invitacion-tab" data-bs-toggle="tab" data-bs-target="#invitacion-tab-pane" type="button" role="tab" aria-controls="invitacion-tab-pane" aria-selected="false">Invitaciones</button>
             </li>
-            <li class="page-item">
-              <a class="page-link" href="#">Ilustracion</a>
+
+            <!--Boton Publicidad-->
+            <li class="page-item" role="presentation">
+              <button class="boton" id="publicidad-tab" data-bs-toggle="tab" data-bs-target="#publicidad-tab-pane" type="button" role="tab" aria-controls="publicidad-tab-pane" aria-selected="false">Publicidad</button>
             </li>
-            <li class="page-item">
-              <a class="page-link" href="#">Ilustracion</a>
+
+            <!--Boton Multimedia-->
+            <li class="page-item" role="presentation">
+              <button class="boton" id="multimedia-tab" data-bs-toggle="tab" data-bs-target="#multimedia-tab-pane" type="button" role="tab" aria-controls="multimedia-tab-pane" aria-selected="false">Multimedia</button>
             </li>
-            <li class="page-item">
-              <a class="page-link" href="#">Ilustracion</a>
+
+            <!--Boton Fotografía-->
+            <li class="page-item" role="presentation">
+              <button class="boton" id="fotografia-tab" data-bs-toggle="tab" data-bs-target="#fotografia-tab-pane" type="button" role="tab" aria-controls="fotografia-tab-pane" aria-selected="false">Fotografía</button>
             </li>
-            <li class="page-item">
-              <a class="page-link" href="#">Ilustracion</a>
+            <li class="page-item" role="presentation">
+              <button class="boton">Web</button>
             </li>
-            <li class="page-item">
-              <a class="page-link" href="#">Publicidad</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">Fotografia</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">Multimedia</a>
+            <li class="page-item" role="presentation">
+              <button class="boton">Fotografía</button>
             </li>
           </ul>
+          
         </div>
       </div>
     </nav>
 
+
+
+<!--Prueba-->
+
+<div class="tab-content container-fluid caja2" id="myTabContent">
+
+  <div class="tab-pane fade show active" id="ilustracion-tab-pane" role="tabpanel" aria-labelledby="ilustracion-tab" tabindex="0">
+
+    <!--Primera Fila-->
+    <div class="row g-2 justify-content-center">
+      <!--Primera imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+        <div class="box color1 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+      <!--Segunda imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+        <div class="box color1 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+    </div>
+
+<!--Segunda Fila-->
+    <div class="row g-2 justify-content-center">
+      <!--Primera imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+        <div class="box color1 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+      <!--segunda imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+        <div class="box color1 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+    </div>
+
+<!--Tercera Fila-->
+    <div class="row g-2 justify-content-center">
+      <!--Primera imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+        <div class="box color1 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+      <!--Segunda imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+        <div class="box color1 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+    </div>
+
+<!--Cuarta Fila-->
+    <div class="row g-2 justify-content-center">
+      <!--Primera imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+        <div class="box color1 borde tamaño2 caja3">
+          <h2>Imagen1</h2>
+        </div>
+      </div>
+      <!--Segunda imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+        <div class="box color1 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="invitacion-tab-pane" role="tabpanel" aria-labelledby="invitacion-tab" tabindex="0">
+
+    <!--Primera Fila-->
+    <div class="row g-2 justify-content-center">
+      <!--Primera imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+        <div class="box color2 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+      <!--Segunda imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+        <div class="box color2 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+    </div>
+
+<!--Segunda Fila-->
+    <div class="row g-2 justify-content-center">
+      <!--Primera imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+        <div class="box color2 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+      <!--segunda imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+        <div class="box color2 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+    </div>
+
+<!--Tercera Fila-->
+    <div class="row g-2 justify-content-center">
+      <!--Primera imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+        <div class="box color2 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+      <!--Segunda imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+        <div class="box color2 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+    </div>
+
+<!--Cuarta Fila-->
+    <div class="row g-2 justify-content-center">
+      <!--Primera imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+        <div class="box color2 borde tamaño2 caja3">
+          <h2>Imagen1</h2>
+        </div>
+      </div>
+      <!--Segunda imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+        <div class="box color2 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="publicidad-tab-pane" role="tabpanel" aria-labelledby="publicidad-tab" tabindex="0">
+
+    <!--Primera Fila-->
+    <div class="row g-2 justify-content-center">
+      <!--Primera imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+        <div class="box color3 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+      <!--Segunda imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+        <div class="box color3 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+    </div>
+
+<!--Segunda Fila-->
+    <div class="row g-2 justify-content-center">
+      <!--Primera imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+        <div class="box color3 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+      <!--segunda imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+        <div class="box color3 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+    </div>
+
+<!--Tercera Fila-->
+    <div class="row g-2 justify-content-center">
+      <!--Primera imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+        <div class="box color3 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+      <!--Segunda imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+        <div class="box color3 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+    </div>
+
+<!--Cuarta Fila-->
+    <div class="row g-2 justify-content-center">
+      <!--Primera imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+        <div class="box color3 borde tamaño2 caja3">
+          <h2>Imagen1</h2>
+        </div>
+      </div>
+      <!--Segunda imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+        <div class="box color3 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="multimedia-tab-pane" role="tabpanel" aria-labelledby="multimedia-tab" tabindex="0">
+    
+    <!--Primera Fila-->
+    <div class="row g-2 justify-content-center">
+      <!--Primera imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+        <div class="box color4 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+      <!--Segunda imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+        <div class="box color4 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+    </div>
+
+<!--Segunda Fila-->
+    <div class="row g-2 justify-content-center">
+      <!--Primera imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+        <div class="box color4 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+      <!--segunda imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+        <div class="box color4 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+    </div>
+
+<!--Tercera Fila-->
+    <div class="row g-2 justify-content-center">
+      <!--Primera imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+        <div class="box color4 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+      <!--Segunda imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+        <div class="box color4 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+    </div>
+
+<!--Cuarta Fila-->
+    <div class="row g-2 justify-content-center">
+      <!--Primera imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+        <div class="box color4 borde tamaño2 caja3">
+          <h2>Imagen1</h2>
+        </div>
+      </div>
+      <!--Segunda imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+        <div class="box color4 borde tamaño2 caja3">
+          <h2>Imagen</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+          </div>
+
+
+<!--Prueba-->
+
+
 <!--Contenido de la Pagina-->
-    <div class="container-fluid caja2">
-  <!--Primera Fila-->
-      <div class="row g-2 justify-content-center">
-        <!--Primera imagen-->
-        <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-          <div class="box color1 borde tamaño2 caja3">
-            <h2>Imagen</h2>
-          </div>
-        </div>
-        <!--Segunda imagen-->
-        <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-          <div class="box color1 borde tamaño2 caja3">
-            <h2>Imagen</h2>
-          </div>
-        </div>
-      </div>
-
-  <!--Segunda Fila-->
-      <div class="row g-2 justify-content-center">
-        <!--Primera imagen-->
-        <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-          <div class="box color1 borde tamaño2 caja3">
-            <h2>Imagen</h2>
-          </div>
-        </div>
-        <!--segunda imagen-->
-        <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-          <div class="box color1 borde tamaño2 caja3">
-            <h2>Imagen</h2>
-          </div>
-        </div>
-      </div>
-
- <!--Tercera Fila-->
-      <div class="row g-2 justify-content-center">
-        <!--Primera imagen-->
-        <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-          <div class="box color1 borde tamaño2 caja3">
-            <h2>Imagen</h2>
-          </div>
-        </div>
-        <!--Segunda imagen-->
-        <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-          <div class="box color1 borde tamaño2 caja3">
-            <h2>Imagen</h2>
-          </div>
-        </div>
-      </div>
-
-  <!--Cuarta Fila-->
-      <div class="row g-2 justify-content-center">
-        <!--Primera imagen-->
-        <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-          <div class="box color1 borde tamaño2 caja3">
-            <h2>Imagen1</h2>
-          </div>
-        </div>
-        <!--Segunda imagen-->
-        <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-          <div class="box color1 borde tamaño2 caja3">
-            <h2>Imagen</h2>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
 <!--Pie de pagina-->
     <footer class="container-fluid caja2">
@@ -201,6 +418,8 @@
       </div>
     </footer>
 
+<!--JavaScript-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
   </body>
 </html>
