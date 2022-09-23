@@ -6,7 +6,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--Flaticon-->
+    <!--Tipografia-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!--Favicon-->
+    <link  rel="icono de acceso directo" href="favicon.ico"  type="imagen/icono-x"> 
+    <link  rel="icono"  href="favicon.ico" type="imagen/icono-x">
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--Mis estilos externos-->
     <link rel="stylesheet" href="css/styles.css">
@@ -21,50 +31,64 @@
     <title>IvnMich - Portafolio</title>
 
   </head>
-  <body>
+  <body class="pintura1">
 
-<!--Cabeza de la pagina-->
-    <header class="container-fluid pintura borde2 alto1" >
-        <div class="row alto1 g-2 align-items-start">
-            <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2"></div>
 
-            <!--Logo-->
-            <div class="col-4 col-sm-4 col-md-2 col-lg-2 caja1 ">
-              <div class="box">
-                <img src="/images/Logo.png" alt="" class="imagen">
+
+<!--COMIENZO DE LA CABEZA DE LA PAGINA-->
+
+    <header class="container-fluid pintura alto1" id="cabeza">
+
+        <div class="row g-3 justify-content-center">
+
+            <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2"><!--Espacio--></div>
+
+            <!--CONTENEDOR DEL LOGO-->
+            <div class="col-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="box margen animate__animated animate__slideInDown animate__slower">
+                <img src="images/Logo.png" alt="" class="imagen">
               </div>
             </div>
 
-            <div class="col-4 col-sm-4 col-md-1 col-lg-1"></div>
+            <div class="col-4 col-sm-4 col-md-1 col-lg-1"><!--Espacio--></div>
 
-            <div class="col-2 col-sm-2 col-md-1 col-lg-1"></div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1"><!--Espacio--></div>
 
-            <!--Boton1-->
-            <div class="col-4 col-sm-4 col-md-2 col-lg-2 caja1">
-              <div class="box">
-                <a href="" class="boton1">Conoceme</a>
+            <!--BOTONES-->
+            <div class="col-8 col-sm-8 col-md-4 col-lg-4">
+              <div class="box posicion1 espacio1 animate__animated animate__slideInDown animate__slower">
+                  <div>
+                    <button class="boton1">Conoceme</button>
+                  </div>
+                  <div>
+                    <button class="boton1">Contacto</button>
+                  </div>
               </div>
             </div>
 
-            <!--Boton2-->
-            <div class="col-4 col-sm-4 col-md-2 col-lg-2 caja1">
-              <div class="box">
-                <a href="" class="boton1">Conoceme</a>
-              </div>
-            </div>
-            <div class="col-2 col-sm-2 col-md-2 col-lg-2"></div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2"><!--Espacio--></div>
+
         </div>
-    </header>
 
-<!--Barra de navegacion-->
-    <nav class="container-fluid caja4">
+    </header>
+<!--FINAL DE LA CABEZA DE LA PAGINA-->
+
+
+
+
+<!--INICIO BARRA DE NAVEGACION-->
+
+    <nav class="container-fluid">
+
       <div class="row justify-content-center">
-        <div class="col-8 col-sm-8 col-md-8 col-lg-8 overflow-auto">
+
+        <div class="col-8 col-sm-8 col-md-8 col-lg-8 overflow-auto  animate__animated animate__fadeInDown animate__delay-1s">
+
           <ul class="pagination pagination-lg espacio" id="myTab" role="tablist">
             
             <!--Boton Ilustracion-->
-            <li class="page-item" role="presentation">
-              <button class="boton" id="ilustracion-tab" data-bs-toggle="tab" data-bs-target="#ilustracion-tab-pane" type="button" role="tab" aria-controls="ilustracion-tab-pane" aria-selected="true">Ilustración</button>
+            <li class="page-item active" role="presentation">
+              <button class="boton" id="ilustracion-tab" data-bs-toggle="tab" data-bs-target="#ilustracion-tab-pane" type="button" role="tab" aria-controls="ilustracion-tab-pane" aria-selected="flase">Ilustración</button>
             </li>
 
             <!--Boton Invitaciones-->
@@ -84,92 +108,205 @@
 
             <!--Boton Fotografía-->
             <li class="page-item" role="presentation">
-              <button class="boton" id="fotografia-tab" data-bs-toggle="tab" data-bs-target="#fotografia-tab-pane" type="button" role="tab" aria-controls="fotografia-tab-pane" aria-selected="false">Fotografía</button>
+              <button class="boton" id="fotografia-tab" data-bs-toggle="tab" data-bs-target="#fotografia-tab-pane" type="button" role="tab" aria-controls="fotografia-tab-pane" aria-selected="ffalse">Fotografía</button>
             </li>
+
+             <!--Boton Web-->
             <li class="page-item" role="presentation">
               <button class="boton">Web</button>
             </li>
-            <li class="page-item" role="presentation">
-              <button class="boton">Fotografía</button>
-            </li>
+
           </ul>
           
         </div>
+
       </div>
+
     </nav>
 
+<!--FINAL DE BARRA DE NAVEGACION-->
 
 
-<!--Prueba-->
 
-<div class="tab-content container-fluid caja2" id="myTabContent">
+
+<!--INICIO DEL CONTENIDO DE LA PAGINA-->
+
+<div class="tab-content container-fluid margen2" id="myTabContent">
+
+
+
+
+  <!--ILUSTRACIONES-->
 
   <div class="tab-pane fade show active" id="ilustracion-tab-pane" role="tabpanel" aria-labelledby="ilustracion-tab" tabindex="0">
 
+
+
     <!--Primera Fila-->
     <div class="row g-2 justify-content-center">
+
       <!--Primera imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-        <div class="box color1 borde alto2 caja3">
-          <h2>Imagen</h2>
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3">
+        <div class="box contorno" data-aos="fade-up"
+        data-aos-duration="3000">
+          
+          <img src="images/ilustracion/ojo.jpg" alt="Dibujo de un ojo" class="imagen2" title="Dibujo de un ojo" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalOjo">
+        
         </div>
       </div>
+      <!-- MODAL -->
+      <div class="modal fade" id="ModalOjo" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="OjoModalLabel">Ilustración ojo arcoiris</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-7"> 
+                  <img src="images/ilustracion/ojo.jpg" alt="" class="imagen2">
+                </div>
+                <div class="col-5">
+                  <p><b>Tecnica:</b> Mixtura sobre papel bond.</p>
+                  <p><b>Fecha:</b> 21 de febrero, 2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!--Segunda imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-        <div class="box color1 borde alto2 caja3">
-          <h2>Imagen</h2>
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 offset-md-2">
+        <div class="box contorno" data-aos="fade-up"
+        data-aos-duration="3000">
+          <img src="images/ilustracion/kirolen.jpg" alt="Dibujo loomian legacy - kirolen" class="imagen2" title="Dibujo loomian legacy" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#KirolenModal">
         </div>
       </div>
+      <!-- MODAL -->
+      <div class="modal fade" id="KirolenModal" tabindex="-1" aria-labelledby="KirolenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="KirolenModalLabel">Ilustración ojo arcoiris</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-7"> 
+                  <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+                </div>
+                <div class="col-5">
+                  <p><b>Tecnica:</b> Ilustracion Digital</p>
+                  <p><b>Fecha:</b> 2 de Septiembre, 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+
 
 <!--Segunda Fila-->
     <div class="row g-2 justify-content-center">
+
       <!--Primera imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-        <div class="box color1 borde alto2 caja3">
-          <h2>Imagen</h2>
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3">
+        <div class="box contorno margen2" data-aos="fade-up"
+        data-aos-duration="1000">
+          <img src="images/ilustracion/yuka.jpg" alt="Personaje Yuka" class="imagen2" title="Yuka">
         </div>
       </div>
+
       <!--segunda imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-        <div class="box color1 borde alto2 caja3">
-          <h2>Imagen</h2>
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 offset-md-2">
+        <div class="box contorno margen2" data-aos="fade-up"
+        data-aos-duration="1000">
+          <img src="images/ilustracion/orion.jpg" alt="Personaje Orion" class="imagen2" title="Orion">
         </div>
       </div>
+
     </div>
+
+
 
 <!--Tercera Fila-->
     <div class="row g-2 justify-content-center">
+
       <!--Primera imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-        <div class="box color1 borde alto2 caja3">
-          <h2>Imagen</h2>
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3">
+        <div class="box contorno margen2" data-aos="fade-up"
+        data-aos-duration="1000">
+          <img src="images/ilustracion/galaxia.jpg" alt="" class="imagen2">
         </div>
       </div>
+
       <!--Segunda imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-        <div class="box color1 borde alto2 caja3">
-          <h2>Imagen</h2>
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 offset-md-2">
+        <div class="box contorno margen2" data-aos="fade-up"
+        data-aos-duration="1000">
+          <img src="images/ilustracion/yo.jpg" alt="" class="imagen2">
         </div>
       </div>
+
     </div>
+
+
 
 <!--Cuarta Fila-->
     <div class="row g-2 justify-content-center">
+
       <!--Primera imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-        <div class="box color1 borde alto2 caja3">
-          <h2>Imagen1</h2>
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3">
+        <div class="box contorno margen2" data-aos="fade-up"
+        data-aos-duration="1000">
+          <img src="images/ilustracion/elfo.jpg" alt="" class="imagen2">
         </div>
       </div>
       <!--Segunda imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-        <div class="box color1 borde alto2 caja3">
-          <h2>Imagen</h2>
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 offset-md-2">
+        <div class="box contorno margen2" data-aos="fade-up"
+        data-aos-duration="1000">
+          <img src="images/ilustracion/gato.jpg" alt="" class="imagen2">
         </div>
       </div>
+      
     </div>
+
+
+
+<!--Quinta Fila-->
+    <div class="row g-2 justify-content-center">
+
+      <!--Primera imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3">
+        <div class="box contorno margen2" data-aos="fade-up"
+        data-aos-duration="1000">
+          <img src="images/ilustracion/iglesia.jpg" alt="Dibujo de un ojo" class="imagen2" title="Dibujo de un ojo">
+        </div>
+      </div>
+
+      <!--Segunda imagen-->
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 offset-md-2">
+        <div class="box contorno margen2" data-aos="fade-up"
+        data-aos-duration="1000">
+          <img src="images/ilustracion/juego.jpg" alt="Dibujo loomian legacy - kirolen" class="imagen2" title="Dibujo loomian legacy">
+        </div>
+      </div>
+
+    </div>
+
+
   </div>
+
+
+
+
+  <!--INVITACIONES-->
 
   <div class="tab-pane fade" id="invitacion-tab-pane" role="tabpanel" aria-labelledby="invitacion-tab" tabindex="0">
 
@@ -177,13 +314,13 @@
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-        <div class="box color2 borde alto2 caja3">
+        <div class="box color2 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
       <!--Segunda imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-        <div class="box color2 borde alto2 caja3">
+        <div class="box color2 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
@@ -193,13 +330,13 @@
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-        <div class="box color2 borde alto2 caja3">
+        <div class="box color2 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
       <!--segunda imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-        <div class="box color2 borde alto2 caja3">
+        <div class="box color2 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
@@ -209,13 +346,13 @@
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-        <div class="box color2 borde alto2 caja3">
+        <div class="box color2 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
       <!--Segunda imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-        <div class="box color2 borde alto2 caja3">
+        <div class="box color2 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
@@ -225,18 +362,23 @@
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-        <div class="box color2 borde alto2 caja3">
+        <div class="box color2 borde alto2 margen3">
           <h2>Imagen1</h2>
         </div>
       </div>
       <!--Segunda imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-        <div class="box color2 borde alto2 caja3">
+        <div class="box color2 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
     </div>
   </div>
+
+
+
+
+  <!--PUBLICIDAD-->
 
   <div class="tab-pane fade" id="publicidad-tab-pane" role="tabpanel" aria-labelledby="publicidad-tab" tabindex="0">
 
@@ -244,13 +386,13 @@
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-        <div class="box color3 borde alto2 caja3">
+        <div class="box color3 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
       <!--Segunda imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-        <div class="box color3 borde alto2 caja3">
+        <div class="box color3 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
@@ -260,13 +402,13 @@
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-        <div class="box color3 borde alto2 caja3">
+        <div class="box color3 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
       <!--segunda imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-        <div class="box color3 borde alto2 caja3">
+        <div class="box color3 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
@@ -276,13 +418,13 @@
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-        <div class="box color3 borde alto2 caja3">
+        <div class="box color3 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
       <!--Segunda imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-        <div class="box color3 borde alto2 caja3">
+        <div class="box color3 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
@@ -292,18 +434,23 @@
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-        <div class="box color3 borde alto2 caja3">
+        <div class="box color3 borde alto2 margen3">
           <h2>Imagen1</h2>
         </div>
       </div>
       <!--Segunda imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-        <div class="box color3 borde alto2 caja3">
+        <div class="box color3 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
     </div>
   </div>
+
+
+
+
+  <!--MULTIMEDIA-->
 
   <div class="tab-pane fade" id="multimedia-tab-pane" role="tabpanel" aria-labelledby="multimedia-tab" tabindex="0">
     
@@ -311,13 +458,13 @@
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-        <div class="box color4 borde alto2 caja3">
+        <div class="box color4 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
       <!--Segunda imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-        <div class="box color4 borde alto2 caja3">
+        <div class="box color4 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
@@ -327,13 +474,13 @@
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-        <div class="box color4 borde alto2 caja3">
+        <div class="box color4 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
       <!--segunda imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-        <div class="box color4 borde alto2 caja3">
+        <div class="box color4 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
@@ -343,13 +490,13 @@
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-        <div class="box color4 borde alto2 caja3">
+        <div class="box color4 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
       <!--Segunda imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-        <div class="box color4 borde alto2 caja3">
+        <div class="box color4 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
@@ -359,69 +506,137 @@
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
-        <div class="box color4 borde alto2 caja3">
+        <div class="box color4 borde alto2 margen3">
           <h2>Imagen1</h2>
         </div>
       </div>
       <!--Segunda imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
-        <div class="box color4 borde alto2 caja3">
+        <div class="box color4 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
     </div>
   </div>
-          </div>
 
 
-<!--Prueba-->
+</div>
 
-
-<!--Contenido de la Pagina-->
     
 
-<!--Pie de pagina-->
-    <footer class="container-fluid caja2">
-      <!--Primera Fila-->
-      <div class="row fondo2 alto3 g-2">
-        <div class="col-4 col-sm-4 col-md-2 col-lg-2 "></div>
-        <!--Logo-->
-        <div class="col-4 col-sm-4 col-md-2 col-lg-2 ">
-          <div class="box color1 borde caja2">
-            <h2>Logo</h2>
+
+<!--PIE DE LA PAGINA-->
+
+    <footer class="container-fluid margen4">
+
+      <div class="row justify-content-center">
+        <div class="col-4 col-sm-4 col-md-2 col-lg-2 espacio3" data-aos="fade-up"
+        data-aos-duration="1000">
+          <div class="box posicion2">
+            <a href="#cabeza" class="boton3">
+            <img src="images/Flecha.png" alt="">
+          </a>
           </div>
         </div>
-        <div class="col-4 col-sm-4 col-md-1 col-lg-1 "></div>
-        <div class="col-2 col-sm-2 col-md-1 col-lg-1 "></div>
-        <!--Primer texto-->
-        <div class="col-4 col-sm-4 col-md-2 col-lg-2 ">
-          <div class="box color1 borde caja2 alto1">
-            <h2>Imagen</h2>
-          </div>
-        </div>
-        <!--Segundo texto-->
-        <div class="col-4 col-sm-4 col-md-2 col-lg-2 ">
-          <div class="box color1 borde caja2 alto1">
-            <h2>Imagen</h2>
-          </div>
-        </div>
-        <div class="col-2 col-sm-2 col-md-2 col-lg-2 "></div>
       </div>
 
-      <!--Segunda Fila-->
-      <div class="row fondo2 g-2">
-        <div class="col-4 col-sm-4 col-md-5 col-lg-5"></div>
-        <!--Derechos de autor-->
-        <div class="col-4 col-sm-4 col-md-2 col-lg-2">
-          <div class="box color1 borde caja2">
-            <h2>Logo final</h2>
+      <!--Primera Fila-->
+      <div class="row g-2 color1" data-aos="fade-up"
+      data-aos-duration="1000">
+
+        <div class="col-4 col-sm-4 col-md-2 col-lg-2"><!--Espacio Vacio--></div>
+
+        <!--Logo-->
+        <div class="col-4 col-sm-4 col-md-2 col-lg-2" data-aos="fade-up"
+        data-aos-duration="1000">
+          <div class="box margen2">
+            <img src="images/LogoBlanco.png" alt="" class="imagen2">
           </div>
         </div>
-        <div class="col-4 col-sm-4 col-md-5 col-lg-5"></div>
+
+        <div class="col-4 col-sm-4 col-md-1 col-lg-1 "><!--Espacio Vacio--></div>
+        <div class="col-2 col-sm-2 col-md-1 col-lg-1 "><!--Espacio Vacio--></div>
+
+        <!--Primer texto-->
+        <div class="col-4 col-sm-4 col-md-2 col-lg-2 espacio3" data-aos="fade-up"
+        data-aos-duration="1000">
+          <div class="box margen2 letra justify-content-center">
+            <div class="posicion1 espacio1">
+              <h2><b>Servicios</b></h2>
+            </div>
+            <div class="posicion1">
+              <ul>
+                <li class="lista">Ilustraciones</li>
+                <li class="lista">Invitaciones</li>
+                <li class="lista">Animaciones</li>
+                <li class="lista">Publicidad</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--Segundo texto-->
+        <div class="col-4 col-sm-4 col-md-2 col-lg-2" data-aos="fade-up"
+        data-aos-duration="1000">
+          <div class="box margen2 letra justify-content-center">
+            <div class="posicion1 espacio1">
+              <h2><b>Contacto</b></h2>
+            </div>
+            <div class="posicion1">
+              <ul>
+                <li class="lista">301 409 8463</li>
+                <li class="lista">ivon.mich@gmail.com</li>
+              </ul>
+            </div>
+            <div class="posicion1">
+              <a href="">
+                 <img src="images/Facebook.png" alt="" class="imagen3">
+              </a>
+              <img src="images/instagram.png" alt="" class="imagen3">
+              <img src="images/twitter.png" alt="" class="imagen3">
+              <img src="images/behancee.png" alt="" class="imagen3">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 "><!--Espacio Vacio--></div>
+
+      </div>
+
+
+      <!--Segunda Fila-->
+      <div class="row color1 g-2">
+
+        <!--Derechos de autor-->
+        <div class="row justify-content-center">
+          <div class="col-10 col-sm-10 col-md-10 col-lg-10 espacio3">
+            <div class="box posicion2 espacio2">
+              <img src="images/lineaBlanca.png" alt="" class="imagen4">
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-4 col-sm-4 col-md-2 col-lg-2 espacio3">
+            <div class="box posicion2">
+              <img src="images/firma.png" alt="" class="imagen5">
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
 
+
+
+
+
 <!--JavaScript-->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
   </body>
