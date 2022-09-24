@@ -80,7 +80,7 @@
 /*ALTURAS*/
 
 .alto1 {
-    height: 335px;
+    height: 300px;
 }
 .alto2 {
     height: 250px;
@@ -218,7 +218,7 @@
 
 
 .margen {
-    margin: 5px;
+    margin: 10px;
 }
 .margen2 {
     margin-top: 20px;
@@ -250,5 +250,42 @@
 /*MEDIAS*/
 
 @media screen and (max-width: 576px){
-    
+    .boton1 {
+        font-size: 1rem;
+    }
+    .alto1 {
+        height: 400px !important; 
+    }
+    .pintura {
+        background-image: url(../images/PinturaMo.png);
+        background-size: 745px !important;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+    .boton1 {
+        font-size: 1rem;
+    }
+    .alto1 {
+        height: 400px !important; 
+    }
+    .pintura {
+        background-image: url(../images/PinturaMo.png);
+        background-size: 745px !important;
+    }
+}
+
+
+@media screen and (max-width: 992px){
+    .boton1 {
+        font-size: 1.2rem;
+    }
+    .alto1 {
+        height: 250px;
+    }
+    .pintura {
+        background-size: 1100px;
+        background-repeat: repeat-x;
+    }
 }
