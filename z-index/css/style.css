@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+#splash {
+    animation-delay: 1.5s;
+}
+#ivon {
+    animation-delay: 2.5s;
+}
+#mich {
+    animation-delay: 3.4s;
+}
+#linea {
+    animation-delay: 4s;
+}
+#texto {
+    animation-delay: 4.7s;
+}
