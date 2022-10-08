@@ -35,6 +35,7 @@
 
 
 
+
 /*POSICION*/
 
 .posicion1 {
@@ -46,6 +47,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.centro {
+    display: flex;
+    align-items: center;
+}
+.centro1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -67,8 +77,8 @@
     background-size: cover;
 }
 .colorfondo1 {
-    background-color: rgb(190, 188, 188);
-    border: 2px black solid;
+    animation: fadeUp;
+    animation-duration: 2s;
 }
 .colorfondo2 {
     background-color: rgb(39, 39, 39);
@@ -97,6 +107,16 @@
 .alto5 {
     height: 150px;
 }
+.alto6 {
+    height: 240px;
+}
+
+.ancho1 {
+    width: 50%;
+}
+.ancho2 {
+    width: 100%;
+}
 
 .textoT {
     font-size: 20px;
@@ -115,6 +135,9 @@
     font-style: italic;
     color: gray;
 }
+.textoT3 {
+    font-size: 1.2em;
+}
 
 
 /*IMAGENES*/
@@ -128,16 +151,18 @@
     padding: 0px;
 }
 .imagen3 {
-    width: 23%;
     padding: 0px;
+}
+.imagen3:hover {
+    opacity: 75%;
 }
 .imagen4 {
     width: 100%;
     padding: 0px;
 }
 .imagen5 {
-    height: 60%;
     padding: 0px;
+    position: absolute;
 }
 .imagen6 {
     width: 180px;
@@ -147,6 +172,25 @@
     width: 20px;
     padding: 2px;
     margin-right: 9px;
+}
+.imagen8 {
+    padding: 0px;
+    position: absolute;
+}
+.imagen9 {
+    padding: 0px;
+}
+.imagenL {
+    width: 80%;
+    padding: 0px;
+}
+.imagenC {
+    width: 90%;
+    padding: 0px;
+}
+.imagenC1 {
+    width: 100%;
+    padding: 0px;
 }
 .contorno {
     border-radius: 10px;
@@ -238,13 +282,36 @@
     transform: scale(1, 1);
 }
 .boton3 {
-    border: 1px rgb(55, 27, 64) solid;
+
     background-color: rgb(55, 27, 64);
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 55px;
     padding-right: 55px;
     border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+.boton3::after {
+    content: "";
+    background: #F07814; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    transform: scale(0, 0);
+    transition: all 0.4s ease;
+}
+.boton3:hover::after {
+    transition: all 0.6s ease-out;
+    transform: scale(1, 1);
 }
 
 
@@ -267,13 +334,20 @@
 .espacio4 {
     margin-bottom: 30px;
 }
+.espacio5 {
+    padding-left: 20px;
+}
+.espacio6 {
+    display: flex;
+    flex-direction: row;
+}
 
 
 .margen {
     margin: 10px;
 }
 .margen2 {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .margen3 {
     margin-top: 20px;
@@ -296,7 +370,10 @@
 .borde2 {
     border: 2px black solid;
 }
-
+.bordeC {
+    border-radius: 20px !important;
+    overflow: hidden;
+}
 
 
 /*MEDIAS*/
@@ -324,8 +401,11 @@
         padding-top: 30px;
     }
     .imagen5 {
-        height: 120%;
-        padding: 0px;
+        height: 120% !important;
+    }
+    .imagen8 {
+        position: absolute;
+        visibility: hidden;
     }
 }
 
@@ -346,10 +426,51 @@
         display: flex;
         align-items: flex-start;
     }
+    .imagen5 {
+        height: 115% !important;
+    }
+    .imagen8 {
+        position: absolute;
+        visibility: hidden;
+    }
+    .imagen9 {
+        height: 200px;
+    }
+    .alto6 {
+        display: flex;
+        justify-content: center;
+        height: 240px;
+    }
+    .imagen3 {
+        height: 45px;
+    }
 }
 
 
-@media screen and (max-width: 992px){
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .imagen5 {
+        height: 109% !important;
+    }
+    .imagen8 {
+        position: absolute;
+        visibility: hidden;
+    }
+    .imagen9 {
+        height: 150px;
+    }
+    .alto6 {
+        height: 180px !important;
+    }
+    .textoT3 {
+        font-size: 0.8em;
+    }
+    .imagen3 {
+        height: 25px;
+    }
+}
+
+
+@media screen and (min-width: 992px){
     .boton1 {
         font-size: 1.2rem;
     }
@@ -359,5 +480,40 @@
     .pintura {
         background-size: 1100px;
         background-repeat: repeat-x;
+    }
+    .imagen5 {
+        position: absolute;
+        visibility: hidden;
+    }
+    .imagen8 {
+        height: 80%;
+    }
+    .imagen9 {
+        height: 180px;
+    }
+    .alto6 {
+        height: 210px !important;
+    }
+    .textoT3 {
+        font-size: 1em;
+    }
+    .imagen3 {
+        height: 30px;
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+    .textoT3 {
+        font-size: 1.2em;
+    }
+    .imagen3 {
+        height: 40px;
+    }
+    .imagen9 {
+        height: 200px;
+    }
+    .alto6 {
+        height: 240px !important;
     }
 }

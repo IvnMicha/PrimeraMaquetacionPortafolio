@@ -13,7 +13,7 @@
 
     <!--Favicon-->
     <link  rel="icono de acceso directo" href="favicon.ico"  type="imagen/icono-x"> 
-    <link  rel="icono"  href="favicon.ico" type="imagen/icono-x">
+    <link  rel="icono" href="favicon.ico" type="imagen/icono-x">
 
     <!--Estilos Animation Scroll - AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -46,7 +46,8 @@
             <!--CONTENEDOR DEL LOGO-->
             <div class="col-4 col-sm-4 col-md-2 col-lg-2">
               <div class="box margen animate__animated animate__slideInDown animate__slower alto5">
-                <img src="images/LogoH.png" alt="" class="imagen5">
+                <img src="images/LogoH.png" alt="" class="imagen8">
+                <img src="images/Logo.png" alt="" class="imagen5">
               </div>
             </div>
 
@@ -61,8 +62,49 @@
                     <button class="boton1">Conoceme</button>
                   </div>
                   <div>
-                    <button class="boton1">Contacto</button>
+                    <button type="button" class="boton1" data-bs-toggle="modal" data-bs-target="#Contacto">Contacto</button>
                   </div>
+              </div>
+            </div>
+
+            <!--Modal Contacto-->
+            <div class="modal fade" id="Contacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content bordeC">
+                  
+                  <div class="container-fluid modal-body color4">
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+                        <div class="box ">
+                          <img src="images/LogoH.png" alt="" class="imagenC espacio2">
+                          <img src="images/lineaBlanca.png" alt="" class="imagenC1 espacio2">
+                          <h2 class="espacio2">Contactame</h2>
+                        </div>
+                      </div>
+                    </div>
+
+                  <div>
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Nombres y Apellidos</label>
+                        <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text"></div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Correo electronico</label>
+                        <input type="email" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Aceptas terminos y condiciones</label>
+                      </div>
+                      <button type="submit" class="boton1">Enviar</button>
+                    </form>
+                  </div>
+
+                  </div>
+
+                </div>
               </div>
             </div>
 
@@ -148,7 +190,7 @@
       <!--Primera imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3">
         <div class="box contorno" data-aos="fade-up"
-        data-aos-duration="3000">
+        data-aos-duration="1000">
           
           <img src="images/ilustracion/kirolen.jpg" alt="Dibujo de un ojo" class="imagen2" title="Dibujo de un ojo" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalOjo">
         
@@ -159,16 +201,15 @@
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header color4">
-              <img src="images/punto-modal.png" alt="" class="imagen7">
               <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <div class="row">
-                <div class="col-7"> 
+                <div class="col-12 col-sm-12 col-md-12 col-lg-7"> 
                   <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
                 </div>
-                <div class="col-5">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                   <div>
                     <h3 class="textoT1 letra1">"Kirolen - Loomian legacy"</h3>
                     <p class="textoT2">IvnMich</p> 
@@ -184,7 +225,7 @@
       <!--Segunda imagen-->
       <div class="col-10 col-sm-10 col-md-3 col-lg-3 offset-md-2">
         <div class="box contorno" data-aos="fade-up"
-        data-aos-duration="3000">
+        data-aos-duration="1000">
           <img src="images/ilustracion/ojo.jpg" alt="Dibujo loomian legacy - kirolen" class="imagen2" title="Dibujo loomian legacy" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#KirolenModal">
         </div>
       </div>
@@ -531,11 +572,11 @@
 
 <!--PIE DE LA PAGINA-->
 
-    <footer class="container-fluid margen4">
+    <footer class="container-fluid margen4" data-aos="fade-up"
+    data-aos-duration="1000">
 
       <div class="row justify-content-center">
-        <div class="col-4 col-sm-4 col-md-2 col-lg-2 espacio3" data-aos="fade-up"
-        data-aos-duration="1000">
+        <div class="col-4 col-sm-4 col-md-2 col-lg-2 espacio3">
           <div class="box posicion2">
             <a href="#cabeza" class="boton3">
             <img src="images/Flecha.png" alt="">
@@ -545,31 +586,30 @@
       </div>
 
       <!--Primera Fila-->
-      <div class="row g-2 color1" data-aos="fade-up"
-      data-aos-duration="1000">
+      <div class="row g-2 color1">
 
         <div class="col-4 col-sm-4 col-md-2 col-lg-2"><!--Espacio Vacio--></div>
 
         <!--Logo-->
-        <div class="col-4 col-sm-4 col-md-2 col-lg-2" data-aos="fade-up"
-        data-aos-duration="1000">
-          <div class="box margen2">
-            <img src="images/LogoBlanco.png" alt="" class="imagen2">
+        <div class="col-4 col-sm-4 col-md-2 col-lg-2">
+          <div class="box margen2 alto6">
+            <img src="images/LogoBlanco.png" alt="" class="imagen9">
           </div>
         </div>
 
-        <div class="col-4 col-sm-4 col-md-1 col-lg-1 "><!--Espacio Vacio--></div>
-        <div class="col-2 col-sm-2 col-md-1 col-lg-1 "><!--Espacio Vacio--></div>
+        <div class="col-4 col-sm-4 col-md-1 col-lg-1"><!--Espacio Vacio--></div>
+        <div class="col-2 col-sm-2 col-md-1 col-lg-1"><!--Espacio Vacio--></div>
 
         <!--Primer texto-->
-        <div class="col-4 col-sm-4 col-md-2 col-lg-2 espacio3" data-aos="fade-up"
-        data-aos-duration="1000">
-          <div class="box margen2 letra justify-content-center">
-            <div class="posicion1 espacio1">
+        <div class="col-8 col-sm-8 col-md-4 col-lg-4 centro">
+          <div class="box letra espacio6 ancho2">
+            
+          <div class="ancho1">
+            <div class="posicion2">
               <h2><b>Servicios</b></h2>
             </div>
-            <div class="posicion1">
-              <ul>
+            <div class="textoT3">
+              <ul class="espacio5" >
                 <li class="lista">Ilustraciones</li>
                 <li class="lista">Invitaciones</li>
                 <li class="lista">Animaciones</li>
@@ -577,33 +617,45 @@
               </ul>
             </div>
           </div>
-        </div>
-
-        <!--Segundo texto-->
-        <div class="col-4 col-sm-4 col-md-2 col-lg-2" data-aos="fade-up"
-        data-aos-duration="1000">
-          <div class="box margen2 letra justify-content-center">
-            <div class="posicion1 espacio1">
+          
+          <div class="ancho1">
+            <div class="posicion2">
               <h2><b>Contacto</b></h2>
             </div>
-            <div class="posicion1">
-              <ul>
+            <div class="textoT3">
+              <ul class="espacio5">
                 <li class="lista">301 409 8463</li>
-                <li class="lista">ivon.mich@gmail.com</li>
+                <li class="lista">mich@gmail.com</li>
               </ul>
             </div>
+
             <div class="posicion1">
-              <a href="">
+
+              <a href="https://www.instagram.com/ivn_mich/" target="_blank" title="Instragram">
+                <img src="images/instagram.png" alt="" class="imagen3">
+             </a>
+
+             <a href="https://twitter.com/IvnMicha" target="_blank" title="Twitter">
+              <img src="images/twitter.png" alt="" class="imagen3">
+             </a>
+
+              <a href="https://www.facebook.com/ivonmichel.hurtadotasama" target="_blank" title="Facebook">
                  <img src="images/Facebook.png" alt="" class="imagen3">
               </a>
-              <img src="images/instagram.png" alt="" class="imagen3">
-              <img src="images/twitter.png" alt="" class="imagen3">
+
+             <a href="" target="_blank" title="Behancee">
               <img src="images/behancee.png" alt="" class="imagen3">
+             </a>
+
             </div>
           </div>
+
+          </div>
+
         </div>
 
-        <div class="col-2 col-sm-2 col-md-2 col-lg-2 "><!--Espacio Vacio--></div>
+
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2"><!--Espacio Vacio--></div>
 
       </div>
 
@@ -623,7 +675,8 @@
         <div class="row justify-content-center">
           <div class="col-4 col-sm-4 col-md-2 col-lg-2 espacio3">
             <div class="box posicion2">
-              <img src="images/firma.png" alt="" class="imagen5">
+             <img src="images/licencia.png" alt="" class="imagenL">
+             <p>Copyright © 2022 Ivon Mich</p>
             </div>
           </div>
         </div>
