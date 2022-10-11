@@ -30,6 +30,15 @@
     <!--Titulo de la pagina-->
     <title>IvnMich - Portafolio</title>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+    <script>
+      $(window).on('load',function() {
+    $('#myModal').modal('show')
+    });
+    </script>
+
   </head>
 
 
@@ -39,26 +48,27 @@
 
 <!--COMIENZO DE LA CABEZA DE LA PAGINA-->
 
-    <header class="container-fluid pintura alto1 borde2" id="cabeza">
 
-        <div class="row g-3 justify-content-center">
+    <header class="container-fluid pintura alto1 " id="cabeza">
 
-            <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2"><!--Espacio--></div>
+        <div class="row justify-content-center ">
+
+            <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 "><!--Espacio--></div>
 
             <!--CONTENEDOR DEL LOGO-->
-            <div class="col-4 col-sm-4 col-md-2 col-lg-2">
+            <div class="col-4 col-sm-4 col-md-2 col-lg-2 ">
               <div class="box margen animate__animated animate__slideInDown animate__slower alto5">
                 <img src="images/LogoH.png" alt="" class="imagen8">
                 <img src="images/Logo.png" alt="" class="imagen5">
               </div>
             </div>
 
-            <div class="col-4 col-sm-4 col-md-1 col-lg-1"><!--Espacio--></div>
+            <div class="col-4 col-sm-4 col-md-1 col-lg-1 "><!--Espacio--></div>
 
-            <div class="col-2 col-sm-2 col-md-1 col-lg-1"><!--Espacio--></div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 "><!--Espacio--></div>
 
             <!--BOTONES-->
-            <div class="col-8 col-sm-8 col-md-4 col-lg-4">
+            <div class="col-8 col-sm-8 col-md-4 col-lg-4 ">
               <div class="box posicion1 espacio1 animate__animated animate__slideInDown animate__slower alto5">
                   <div>
                     <button class="boton1">Conoceme</button>
@@ -75,9 +85,8 @@
     </header>
 
 
-
     <!--Modal Contacto-->
-    <div class="modal fade" id="Contacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content bordeC">
           
@@ -128,11 +137,11 @@
 
 <!--INICIO BARRA DE NAVEGACION-->
 
-    <nav class="container-fluid borde2">
+    <nav class="container-fluid ">
 
-      <div class="row justify-content-center">
+      <div class="row justify-content-center ">
 
-        <div class="col-8 col-sm-8 col-md-8 col-lg-8 overflow-auto  animate__animated animate__fadeInDown animate__delay-1s">
+        <div class="col-8 col-sm-8 col-md-8 col-lg-8 overflow-auto  animate__animated animate__fadeInDown animate__delay-1s ">
 
           <ul class="pagination pagination-lg espacio" id="myTab" role="tablist">
             
@@ -181,7 +190,7 @@
 
 <!--INICIO DEL CONTENIDO DE LA PAGINA-->
 
-<div class="tab-content container-fluid margen2 borde2" id="myTabContent">
+<div class="tab-content container-fluid margen2 " id="myTabContent">
 
 
 
@@ -370,13 +379,13 @@
     <!--Primera Fila-->
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 ">
         <div class="box color2 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
       <!--Segunda imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3  offset-md-2">
         <div class="box color2 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
@@ -386,13 +395,13 @@
 <!--Segunda Fila-->
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 ">
         <div class="box color2 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
       <!--segunda imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3  offset-md-2">
         <div class="box color2 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
@@ -402,13 +411,13 @@
 <!--Tercera Fila-->
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 ">
         <div class="box color2 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
       <!--Segunda imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3  offset-md-2">
         <div class="box color2 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
@@ -418,13 +427,13 @@
 <!--Cuarta Fila-->
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 ">
         <div class="box color2 borde alto2 margen3">
           <h2>Imagen1</h2>
         </div>
       </div>
       <!--Segunda imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3  offset-md-2">
         <div class="box color2 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
@@ -442,13 +451,13 @@
     <!--Primera Fila-->
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 ">
         <div class="box color3 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
       <!--Segunda imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3  offset-md-2">
         <div class="box color3 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
@@ -458,13 +467,13 @@
 <!--Segunda Fila-->
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 ">
         <div class="box color3 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
       <!--segunda imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3  offset-md-2">
         <div class="box color3 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
@@ -474,13 +483,13 @@
 <!--Tercera Fila-->
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 ">
         <div class="box color3 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
       <!--Segunda imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3  offset-md-2">
         <div class="box color3 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
@@ -490,13 +499,13 @@
 <!--Cuarta Fila-->
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 ">
         <div class="box color3 borde alto2 margen3">
           <h2>Imagen1</h2>
         </div>
       </div>
       <!--Segunda imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3  offset-md-2">
         <div class="box color3 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
@@ -514,13 +523,13 @@
     <!--Primera Fila-->
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 ">
         <div class="box color4 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
       <!--Segunda imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3  offset-md-2">
         <div class="box color4 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
@@ -530,13 +539,13 @@
 <!--Segunda Fila-->
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 ">
         <div class="box color4 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
       <!--segunda imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3  offset-md-2">
         <div class="box color4 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
@@ -546,13 +555,13 @@
 <!--Tercera Fila-->
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 ">
         <div class="box color4 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
       </div>
       <!--Segunda imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3  offset-md-2">
         <div class="box color4 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
@@ -562,13 +571,13 @@
 <!--Cuarta Fila-->
     <div class="row g-2 justify-content-center">
       <!--Primera imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 ">
         <div class="box color4 borde alto2 margen3">
           <h2>Imagen1</h2>
         </div>
       </div>
       <!--Segunda imagen-->
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 borde2 offset-md-2">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3  offset-md-2">
         <div class="box color4 borde alto2 margen3">
           <h2>Imagen</h2>
         </div>
@@ -584,7 +593,7 @@
 
 <!--PIE DE LA PAGINA-->
 
-    <footer class="container-fluid margen4 borde2" data-aos="fade-up"
+    <footer class="container-fluid margen4 " data-aos="fade-up"
     data-aos-duration="1000">
 
       <div class="row justify-content-center">
@@ -705,6 +714,8 @@
 <script>
   AOS.init();
 </script>
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
