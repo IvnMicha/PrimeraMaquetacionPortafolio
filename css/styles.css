@@ -56,6 +56,16 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
+}
+.centro2 {
+    display: flex;
+    justify-content: center;
+}
+.letraP {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
 }
 
 
@@ -180,8 +190,10 @@
 .imagen9 {
     padding: 0px;
 }
+.imagen10 {
+    height: 25px;
+}
 .imagenL {
-    width: 80%;
     padding: 0px;
 }
 .imagenC {
@@ -378,6 +390,8 @@
 
 /*MEDIAS*/
 
+
+
 @media screen and (max-width: 576px){
     .boton1 {
         font-size: 1rem !important;
@@ -406,6 +420,23 @@
     .imagen8 {
         position: absolute;
         visibility: hidden;
+    }
+    .imagen9 {
+        height: 180px;
+    }
+    .alto6 {
+        display: flex;
+        justify-content: center;
+        height: 240px;
+    }
+    .imagen3 {
+        height: 30px;
+    }
+    .imagenL {
+        width: 150px;
+    }
+    .letraP {
+        font-size: 0.7rem;
     }
 }
 
@@ -442,7 +473,13 @@
         height: 240px;
     }
     .imagen3 {
-        height: 45px;
+        height: 35px;
+    }
+    .imagenL {
+        width: 180px;
+    }
+    .letraP {
+        font-size: 0.8rem;
     }
 }
 
@@ -466,6 +503,12 @@
     }
     .imagen3 {
         height: 25px;
+    }
+    .imagenL {
+        width: 100px;
+    }
+    .letraP {
+        font-size: 0.5rem;
     }
 }
 
@@ -499,6 +542,12 @@
     }
     .imagen3 {
         height: 30px;
+    }
+    .imagenL {
+        width: 120px;
+    }
+    .letraP {
+        font-size: 0.6rem;
     }
 }
 
