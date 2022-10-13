@@ -2,6 +2,8 @@
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -61,7 +63,14 @@
 .centro2 {
     display: flex;
     justify-content: center;
+    
 }
+
+.direccion {
+    display: flex;
+    justify-content:flex-end;
+}
+
 .letraP {
     color: white;
     text-align: center;
@@ -121,6 +130,7 @@
     height: 240px;
 }
 
+
 .ancho1 {
     width: 50%;
 }
@@ -147,6 +157,10 @@
 }
 .textoT3 {
     font-size: 1.2em;
+}
+
+.entradaT {
+    border-radius: 15px !important;
 }
 
 
@@ -217,7 +231,6 @@
     border: 1px #F07814 solid;
     background-color: #F07814;
     color: white;
-    font-weight: 600;
     text-decoration: none;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -263,6 +276,7 @@
     padding-bottom: 10px;
     padding-left: 25px;
     padding-right: 25px;
+    margin: 5px;
     font-size: 1.3rem;
     font-weight: 500;
     border-radius: 10px;
@@ -390,36 +404,46 @@
 
 /*MEDIAS*/
 
+@media screen and (min-width: 0px) and (max-width: 576px){
 
-
-@media screen and (max-width: 576px){
+/*Media header*/
     .boton1 {
-        font-size: 1rem !important;
+        font-size: 0.8rem !important;
     }
     .alto1 {
-        height: 400px !important; 
+        height: 280px !important; 
     }
     .pintura {
         background-image: url(../images/PinturaMo.png);
-        background-size: 745px !important;
+        background-size: 515px !important;
     }
     .alto5 {
         display: flex;
         justify-content: center;
+        height: 100px;
     }
     .espacio1 {
-        padding-top: 10px;
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
-        padding-top: 30px;
+        padding-top: 10px;
     }
     .imagen5 {
         height: 120% !important;
     }
     .imagen8 {
         position: absolute;
-        visibility: hidden;
+        visibility:hidden;
+        width: 50px;
+    }
+
+
+/*Media*/
+    .boton {
+        font-size: 0.8rem !important;
+        margin-left: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .imagen9 {
         height: 180px;
@@ -438,12 +462,57 @@
     .letraP {
         font-size: 0.7rem;
     }
+    .contenido {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .ancho1 {
+        width: 100%;
+    }
+    .textoT3 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5em;
+    }
+    .foot {
+        display: flex;
+        justify-content: center;
+    }
+    .imagen3 {
+        height: 45px !important;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .alto7 {
+        height: 490px;
+    }
+    .alto6 {
+        padding-top: 5px;
+        height: 210px !important;
+    }
+    .arriba {
+        padding-top: 15px;
+    }
+    .Texto {
+        font-size: 1.9em;
+    }
+
+    .imagenL {
+        width: 180px;
+    }
+    .letraP {
+        font-size: 0.8rem;
+    }
 }
 
 
+
 @media screen and (min-width: 576px) and (max-width: 768px){
+
+/*Media header*/
     .boton1 {
-        font-size: 1.2rem !important;
+        font-size: 1.5rem !important;
     }
     .alto1 {
         height: 400px !important; 
@@ -452,17 +521,29 @@
         background-image: url(../images/PinturaMo.png);
         background-size: 745px !important;
     }
-    .espacio1 {
-        padding-top: 10px;
+    .alto5 {
         display: flex;
+        justify-content: center;
+        height: 150px;
+    }
+    .espacio1 {
+        display: flex;
+        justify-content: space-around;
         align-items: flex-start;
+        padding-top: 30px;
     }
     .imagen5 {
         height: 115% !important;
     }
     .imagen8 {
         position: absolute;
-        visibility: hidden;
+        visibility:hidden;
+        width: 50px;
+    }
+
+/*Media*/
+    .boton {
+        font-size: 1.5rem !important;
     }
     .imagen9 {
         height: 200px;
@@ -485,6 +566,23 @@
 
 
 @media screen and (min-width: 768px) and (max-width: 992px){
+
+/*Media header*/
+    .boton1 {
+        font-size: 1rem !important;
+        }
+    .alto1 {
+        height: 260px !important; 
+    }
+    .pintura {
+        background-image: url(../images/PinturaMo.png);
+        background-size: 460px !important;
+    }
+    .alto5 {
+        display: flex;
+        justify-content: center;
+        height: 150px;
+    }
     .imagen5 {
         height: 109% !important;
     }
@@ -492,6 +590,8 @@
         position: absolute;
         visibility: hidden;
     }
+
+/*Media*/
     .imagen9 {
         height: 150px;
     }
@@ -513,7 +613,9 @@
 }
 
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 993px) and (max-width: 1200px){
+
+/*Media header*/
     .boton1 {
         font-size: 1.2rem;
     }
@@ -529,8 +631,15 @@
         visibility: hidden;
     }
     .imagen8 {
-        height: 80%;
+        height: 70%;
     }
+    .alto5 {
+        display: flex;
+        align-items: center;
+    }
+
+
+/*Media*/
     .imagen9 {
         height: 180px;
     }
@@ -553,6 +662,32 @@
 
 
 @media screen and (min-width: 1200px){
+
+/*Media header*/
+    .boton1 {
+        font-size: 1.4rem;
+    }
+    .alto1 {
+        height: 250px;
+    }
+    .pintura {
+        background-size: 1100px;
+        background-repeat: repeat-x;
+    }
+    .imagen5 {
+        position: absolute;
+        visibility: hidden;
+    }
+    .imagen8 {
+        height: 80%;
+    }
+    .alto5 {
+        display: flex;
+        align-items: center;
+    }
+
+
+/*Media*/
     .textoT3 {
         font-size: 1.2em;
     }
