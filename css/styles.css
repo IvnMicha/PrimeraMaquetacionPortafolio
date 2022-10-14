@@ -446,21 +446,15 @@
         padding-right: 30px;
     }
     .imagen9 {
-        height: 180px;
+        height: 170px !important;
     }
     .alto6 {
         display: flex;
         justify-content: center;
-        height: 240px;
+        height: 100px !important;
     }
     .imagen3 {
         height: 30px;
-    }
-    .imagenL {
-        width: 150px;
-    }
-    .letraP {
-        font-size: 0.7rem;
     }
     .contenido {
         display: flex;
@@ -473,7 +467,7 @@
     .textoT3 {
         display: flex;
         justify-content: center;
-        font-size: 1.5em;
+        font-size: 1em;
     }
     .foot {
         display: flex;
@@ -485,7 +479,7 @@
         padding-right: 5px;
     }
     .alto7 {
-        height: 490px;
+        height: 400px;
     }
     .alto6 {
         padding-top: 5px;
@@ -499,10 +493,18 @@
     }
 
     .imagenL {
-        width: 180px;
+        width: 110px;
     }
     .letraP {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
+    }
+    .ubicacion {
+        display: flex;
+        flex-direction: column;
+    }
+    .altura {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -557,10 +559,18 @@
         height: 35px;
     }
     .imagenL {
-        width: 180px;
+        width: 120px;
     }
     .letraP {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
+    }
+    .ubicacion {
+        display: flex;
+        flex-direction: column;
+    }
+    .altura {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -605,10 +615,18 @@
         height: 25px;
     }
     .imagenL {
-        width: 100px;
+        width: 110px;
     }
     .letraP {
         font-size: 0.5rem;
+    }
+    .ubicacion {
+        display: flex;
+        flex-direction: column;
+    }
+    .altura {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -653,10 +671,18 @@
         height: 30px;
     }
     .imagenL {
-        width: 120px;
+        width: 125px;
     }
     .letraP {
         font-size: 0.6rem;
+    }
+    .ubicacion {
+        display: flex;
+        flex-direction: column;
+    }
+    .altura {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -700,4 +726,19 @@
     .alto6 {
         height: 240px !important;
     }
+    .imagenL {
+        width: 130px;
+    }
+    .letraP {
+        font-size: 0.8rem;
+    }
+    .ubicacion {
+        display: flex;
+        flex-direction: column;
+    }
+    .altura {
+        display: flex;
+        justify-content: center;
+    }
 }
+
