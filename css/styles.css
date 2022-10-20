@@ -64,8 +64,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap
-    
-    
+}
+.centro3 {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .direccion {
@@ -78,6 +82,11 @@
     text-align: center;
     padding-top: 10px;
 }
+.letraT {
+    color: rgb(55, 27, 64);
+    text-align: center;
+}
+
 
 
 
@@ -221,6 +230,9 @@
 }
 .imagenL {
     padding: 0px;
+}
+.imagenLibro {
+    height: 100%;
 }
 .imagenC {
     width: 90%;
@@ -383,6 +395,10 @@
     display: flex;
     flex-direction: row;
 }
+.espacio7 {
+    padding: 20px;
+    margin-top: 5px;
+}
 
 
 .margen {
@@ -399,6 +415,10 @@
 }
 .margen4 {
     margin-top: 100px;
+}
+.margen5 {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
 }
 
 
