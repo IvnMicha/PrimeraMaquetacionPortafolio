@@ -63,6 +63,8 @@
 .centro2 {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap
+    
     
 }
 
@@ -130,7 +132,10 @@
     height: 240px;
 }
 .alto8 {
-    height: 700px;
+    height: 2400px;
+}
+.alto9 {
+    height: 550px;
 }
 
 
@@ -140,6 +145,10 @@
 .ancho2 {
     width: 100%;
 }
+.ancho3 {
+    width: 33%;
+}
+
 
 .textoT {
     font-size: 20px;
@@ -832,4 +841,13 @@ li.active {
 
 /* ---- Prueba isotope plugin---- */
 
+.conoceme {
+    width: 100% !important;
+}
+.conoceme .item1 {
+    width: 100% !important;
+    float: left;
+    margin-bottom: 5px;
+    padding: 15px;
+}
 

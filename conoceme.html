@@ -205,17 +205,55 @@
 
   <!--INICIO DEL CONTENIDO DE LA PAGINA-->
 
-  <div class="container-fluid margen2 borde2 alto8">
+  <div class="container-fluid margen2 borde2 alto8 conoceme">
 
-    <div class="row g-2 justify-content-center borde2 alto8">
 
-      <div class="col-10 col-sm-10 col-md-5 col-lg-5 alto1 borde2"></div>
+    <div class="item1 soy">
 
-      <div class="col-10 col-sm-10 col-md-3 col-lg-3 alto1 borde2">
+    <div class="row g-2 justify-content-center borde2">
+      <div class="col-10 col-sm-10 col-md-10 col-lg-10 alto4 borde2">
       </div>
-
-      <!--FIN DEL ROW DEL CONTENIDO PRINCIPAL DE LA PAGINA-->
+      <div class="col-10 col-sm-10 col-md-10 col-lg-10 alto1 borde2"></div>
+      <div class="col-10 col-sm-10 col-md-10 col-lg-10 alto9 borde2"></div>
     </div>
+
+    <div class="row g-2 justify-content-center borde2">
+      <div class="col-10 col-sm-10 col-md-10 col-lg-10 alto4 borde2">
+      </div>
+      <div class="col-10 col-sm-10 col-md-8 col-lg-8 alto9 borde2 centro2">
+        <div class="borde2 ancho3 alto1"></div>
+        <div class="borde2 ancho3 alto1"></div>
+        <div class="borde2 ancho3 alto1"></div>
+        <div class="borde2 ancho3 alto1"></div>
+        <div class="borde2 ancho3 alto1"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="item1 perfil">
+
+    <div class="row g-2 justify-content-center borde2 margen2">
+      <div class="col-10 col-sm-10 col-md-10 col-lg-10 alto4 borde2">
+      </div>
+      <div class="col-10 col-sm-10 col-md-5 col-lg-5 alto9 borde2"></div>
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 alto9 borde2"></div>
+    </div>
+
+    <div class="row g-2 justify-content-center borde2 ">
+      <div class="col-10 col-sm-10 col-md-10 col-lg-10 alto4 borde2">
+      </div>
+      <div class="col-10 col-sm-10 col-md-8 col-lg-8 alto9 borde2 centro2">
+        <div class="borde2 ancho3 alto1"></div>
+        <div class="borde2 ancho3 alto1"></div>
+        <div class="borde2 ancho3 alto1"></div>
+        <div class="borde2 ancho3 alto1"></div>
+        <div class="borde2 ancho3 alto1"></div>
+      </div>
+    </div>
+
+  </div>
+
 
     <!--FIN CONTENEDOR DEL CONTENIDO PRINCIPAL DE LA PAGINA-->
   </div>
@@ -366,8 +404,8 @@
       $("#myModal").modal("show")
     });
 
-    $(".portafolio-item").isotope({
-      itemSelector: ".item",
+    $(".conoceme").isotope({
+      itemSelector: ".item1",
       layoutMode: "fitRows"
     });
 
@@ -376,7 +414,7 @@
       $(this).addClass("active");
 
       var selector = $(this).attr("data-filter");
-      $(".portafolio-item").isotope({
+      $(".conoceme").isotope({
         filter: selector
       })
       return false;
