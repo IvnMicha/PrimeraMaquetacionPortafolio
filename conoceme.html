@@ -30,66 +30,322 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <!--Titulo de la pagina-->
-  <title>IvnMich - Conoceme</title> 
+  <title>IvnMich - Conoceme</title>
 
 
-
-  
-  
-  
 </head>
 
 
-<body>
+<body class="pintura1">
+
+  <!--COMIENZO DE LA CABEZA DE LA PAGINA-->
 
 
-  <div class="container">
-    <div class="portafolio-menu overflow-auto">
-      <ul>
-        <li class="active" data-filter="*">Todos</li>
-        <li data-filter=".ilustracion">Ilustraciones</li>
-        <li data-filter=".invitacion">Invitaciones</li>
-        <li data-filter=".publicidad">Publicidad</li>
-      </ul>
+
+  <header class="container-fluid pintura alto1" id="cabeza">
+
+    <div class="row justify-content-center">
+
+      <div class="col-3 col-sm-4 col-md-2 col-lg-2 col-xl-2  ">
+        <!--Espacio-->
+      </div>
+
+      <!--LOGO PRINCIPAL-->
+      <div class="col-6 col-sm-4 col-md-2 col-lg-2">
+        <div class="box animate__animated animate__slideInDown animate__slower margen alto5">
+          <img src="images/LogoH.png" alt="LogoVersion1" class="imagen8">
+          <img src="images/Logo.png" alt="LogoVersion1" class="imagen5">
+        </div>
+      </div>
+
+      <div class="col-3 col-sm-4 col-md-1 col-lg-1">
+        <!--Espacio-->
+      </div>
+
+      <div class="col-2 col-sm-2 col-md-1 col-lg-1">
+        <!--Espacio-->
+      </div>
+
+      <!--BOTONES-->
+      <div class="col-8 col-sm-8 col-md-4 col-lg-4">
+        <div class="box animate__animated animate__slideInDown animate__slower posicion1 espacio1 margen alto5">
+          <div>
+            <a href="index.html" class="boton1">Portafolio</a>
+          </div>
+          <div class="Esboton">
+            <button type="button" class="boton1" data-bs-toggle="modal" data-bs-target="#Contacto">Contacto</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+        <!--Espacio-->
+      </div>
+
     </div>
 
-    <div class="portafolio-item">
+  </header>
 
-      <div class="item ilustracion">
-        <img src="images/ilustracion/elfo.jpg" alt="" class="img">
+
+  <!--MODAL BOTON CONTACTO-->
+  <div class="modal fade" id="Contacto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bordeC">
+
+        <div class="container-fluid modal-body color4">
+
+          <div class="row">
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+              <div class="direccion">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="box">
+                <img src="images/LogoH.png" alt="" class="imagenC espacio2">
+              </div>
+              <div class="box">
+                <img src="images/lineaBlanca.png" alt="" class="imagenC espacio2">
+              </div>
+              <div class="box">
+                <h2>Contactame</h2>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <form>
+
+              <div class="mb-3">
+                <input type="name" class="entradaT form-control form-control-lg" id="exampleInputEmail1"
+                  aria-describedby="emailHelp" placeholder="Nombres y Apellidos">
+                <div id="emailHelp" class="form-text "></div>
+              </div>
+
+              <div class="mb-3">
+                <input type="email" class="entradaT form-control form-control-lg" id="exampleInputPassword1"
+                  placeholder="Correo electronico">
+              </div>
+
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Aceptas terminos y condiciones</label>
+              </div>
+
+              <div class="">
+                <button type="button" class="boton1" data-bs-dismiss="modal">Enviar</button>
+              </div>
+
+              <div class="">
+
+                <a href="https://www.instagram.com/ivn_mich/" target="_blank" title="Instragram">
+                  <img src="images/instagram.png" class="">
+                </a>
+
+                <a href="https://twitter.com/IvnMicha" target="_blank" title="Twitter">
+                  <img src="images/twitter.png" class="">
+                </a>
+
+                <a href="https://www.facebook.com/ivonmichel.hurtadotasama" target="_blank" title="Facebook">
+                  <img src="images/Facebook.png" class="">
+                </a>
+
+                <a href="" target="_blank" title="Behancee">
+                  <img src="images/behancee.png" class="">
+                </a>
+
+              </div>
+
+
+            </form>
+          </div>
+
+        </div>
+
       </div>
-
-      <div class="item publicidad">
-        <img src="images/ilustracion/galaxia.jpg" alt="" class="img">
-      </div>
-
-      <div class="item invitacion">
-        <img src="images/ilustracion/gato.jpg" alt="" class="img">
-      </div>
-
-      <div class="item ilustracion">
-        <img src="images/ilustracion/iglesia.jpg" alt="" class="img">
-      </div>
-
-      <div class="item publicidad">
-        <img src="images/ilustracion/juego.jpg" alt="" class="img">
-      </div>
-
-      <div class="item publicidad">
-        <img src="images/ilustracion/orion.jpg" alt="" class="img">
-      </div>
-
-      <div class="item invitacion">
-        <img src="images/ilustracion/inuyasha.jpg" alt="" class="img">
-      </div>
-
     </div>
   </div>
 
 
 
+  <!--FINAL DE LA CABEZA DE LA PAGINA-->
 
-</body>
+
+
+
+
+
+  <!--INICIO BARRA DE NAVEGACION-->
+
+  <nav class="container-fluid ">
+
+    <div class="row justify-content-center ">
+
+      <div
+        class="col-8 col-sm-8 col-md-8 col-lg-8 overflow-auto  animate__animated animate__fadeInDown animate__delay-1s ">
+
+        <div class="portafolio-menu overflow-auto">
+          <ul>
+            <li class="active" data-filter="*">Conoceme</li>
+            <li data-filter=".soy">¿Quien soy?</li>
+            <li data-filter=".perfil">Perfil</li>
+            <li data-filter=".educacion">Educación</li>
+            <li data-filter=".habilidad">Habilidades</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!--FINAL DE BARRA DE NAVEGACION-->
+
+
+  <!--INICIO DEL CONTENIDO DE LA PAGINA-->
+
+  <div class="container-fluid margen2 borde2 alto8">
+
+    <div class="row g-2 justify-content-center borde2 alto8">
+
+      <div class="col-10 col-sm-10 col-md-5 col-lg-5 alto1 borde2"></div>
+
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 alto1 borde2">
+      </div>
+
+      <!--FIN DEL ROW DEL CONTENIDO PRINCIPAL DE LA PAGINA-->
+    </div>
+
+    <!--FIN CONTENEDOR DEL CONTENIDO PRINCIPAL DE LA PAGINA-->
+  </div>
+
+
+
+
+
+  <!--PIE DE LA PAGINA-->
+
+  <footer class="container-fluid margen4">
+
+    <div class="row justify-content-center">
+      <div class="col-4 col-sm-4 col-md-2 col-lg-2 espacio3 posicion2">
+        <div class="box">
+          <a href="#cabeza" class="boton3">
+            <img src="images/Flecha.png" class="imagen10">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--Primera Fila-->
+    <div class="row color1">
+
+      <div class="col-4 col-sm-4 col-md-2 col-lg-2">
+        <!--Espacio Vacio-->
+      </div>
+
+      <!--Logo-->
+      <div class="col-4 col-sm-4 col-md-2 col-lg-2">
+        <div class="box margen2 alto6">
+          <img src="images/LogoBlanco.png" alt="" class="imagen9">
+        </div>
+      </div>
+
+      <div class="col-4 col-sm-4 col-md-1 col-lg-1">
+        <!--Espacio Vacio-->
+      </div>
+      <div class="col-2 col-sm-2 col-md-1 col-lg-1">
+        <!--Espacio Vacio-->
+      </div>
+
+      <!--Primer texto-->
+      <div class="col-8 col-sm-8 col-md-4 col-lg-4 centro alto7">
+        <div class="box letra espacio6 ancho2 contenido">
+
+          <div class="ancho1">
+            <div class="posicion2">
+              <h2 class="Texto"><b>Servicios</b></h2>
+            </div>
+            <div class="textoT3">
+              <ul class="espacio5">
+                <li class="lista">Ilustraciones</li>
+                <li class="lista">Invitaciones</li>
+                <li class="lista">Animaciones</li>
+                <li class="lista">Publicidad</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="ancho1">
+            <div class="posicion2 arriba">
+              <h2 class="Texto"><b>Contacto</b></h2>
+            </div>
+            <div class="textoT3 arriba">
+              <ul class="espacio5">
+                <li class="lista">301 409 8463</li>
+                <li class="lista">mich@gmail.com</li>
+              </ul>
+            </div>
+
+            <div class="posicion1 foot arriba">
+
+              <a href="https://www.instagram.com/ivn_mich/" target="_blank" title="Instragram">
+                <img src="images/instagram.png" alt="" class="imagen3">
+              </a>
+
+              <a href="https://twitter.com/IvnMicha" target="_blank" title="Twitter">
+                <img src="images/twitter.png" alt="" class="imagen3">
+              </a>
+
+              <a href="https://www.facebook.com/ivonmichel.hurtadotasama" target="_blank" title="Facebook">
+                <img src="images/Facebook.png" alt="" class="imagen3">
+              </a>
+
+              <a href="" target="_blank" title="Behancee">
+                <img src="images/behancee.png" alt="" class="imagen3">
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+        <!--Espacio Vacio-->
+      </div>
+
+    </div>
+
+
+    <!--Segunda Fila-->
+    <div class="row color1">
+
+      <!--Derechos de autor-->
+      <div class="row justify-content-center">
+        <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+          <div class="box posicion2 espacio2">
+            <img src="images/lineaBlanca.png" alt="" class="imagen4">
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-5 col-sm-5 col-md-3 col-lg-3 espacio3 centro2 ubicacion">
+          <div class="box altura">
+            <img src="images/licencia.png" alt="" class="imagenL">
+          </div>
+          <div class="box">
+            <p class="letraP">Copyright © 2022 IvonMich</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 
 
 
@@ -101,30 +357,35 @@
     AOS.init();
   </script>
 
-  
-<script src="js/jquery-3.6.1.min.js"></script>  
-<script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
 
-<script>
-  $(".portafolio-item").isotope({
-    itemSelector: ".item",
-    layoutMode: "fitRows"
-  });
+  <script>
 
-  $(".portafolio-menu ul li").click(function(){
-    $(".portafolio-menu ul li").removeClass("active");
-    $(this).addClass("active");
+    $(window).on("load", function () {
+      $("#myModal").modal("show")
+    });
 
-    var selector = $(this).attr("data-filter");
     $(".portafolio-item").isotope({
-      filter: selector
+      itemSelector: ".item",
+      layoutMode: "fitRows"
+    });
+
+    $(".portafolio-menu ul li").click(function () {
+      $(".portafolio-menu ul li").removeClass("active");
+      $(this).addClass("active");
+
+      var selector = $(this).attr("data-filter");
+      $(".portafolio-item").isotope({
+        filter: selector
+      })
+      return false;
     })
-    return false;
-  })
 
 
-</script>
 
+
+  </script>
 
 
 

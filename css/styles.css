@@ -129,6 +129,9 @@
 .alto6 {
     height: 240px;
 }
+.alto8 {
+    height: 700px;
+}
 
 
 .ancho1 {
@@ -585,6 +588,17 @@
         display: flex;
         justify-content: center;
     }
+    .portafolio-item .item {
+        width: 503px !important;
+        float: left;
+        margin-bottom: 5px;
+        padding: 15px;
+    }
+    .al {
+        border-radius: 10px;
+        height: 473px !important;
+        overflow: hidden;
+    }
 }
 
 
@@ -795,12 +809,27 @@
     margin-bottom: 5px;
     padding: 15px;
 }
+.al {
+    border-radius: 10px;
+    height: 273px;
+    overflow: hidden;
+}
 .img {
-    width: 100%;
+    width: 100% !important;
+    transition: all 0.6s ease;
+    
+}
+.img:hover {
+    transition: all 0.6s ease;
+    transform: scale(1.1);
+    filter: brightness(60%);
 }
 
 li.active {
     background: #F07814;
     color: white;
 }
+
+/* ---- Prueba isotope plugin---- */
+
 
