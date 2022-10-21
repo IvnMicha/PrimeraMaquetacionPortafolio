@@ -146,6 +146,9 @@
 .alto9 {
     height: 550px;
 }
+.altoSoy {
+    height: 2000px;
+}
 
 
 .ancho1 {
@@ -156,6 +159,9 @@
 }
 .ancho3 {
     width: 33%;
+}
+.ancho4 {
+    width: 80%;
 }
 
 
@@ -178,6 +184,9 @@
 }
 .textoT3 {
     font-size: 1.2em;
+}
+.textoT4 {
+    font-size: 1.3em;
 }
 
 .entradaT {
@@ -231,9 +240,22 @@
 .imagenL {
     padding: 0px;
 }
+
 .imagenLibro {
     height: 100%;
 }
+.imagenPerfil {
+    height: inherit;
+}
+.imagenFilo {
+    width: 100%;
+}
+
+.altoPerfil {
+    width: 300px;
+    height: 350px;
+}
+
 .imagenC {
     width: 90%;
     padding: 0px;
@@ -399,6 +421,10 @@
     padding: 20px;
     margin-top: 5px;
 }
+.espacio8 {
+    padding-bottom: 50px;
+
+}
 
 
 .margen {
@@ -509,6 +535,7 @@
     .textoT3 {
         display: flex;
         justify-content: center;
+        display: table-row;
         font-size: 1em;
     }
     .foot {
