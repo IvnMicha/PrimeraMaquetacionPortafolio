@@ -68,8 +68,14 @@
 .centro3 {
     display: flex;
     align-items:center;
-    flex-direction: column;
     text-align: center;
+    flex-direction: column;
+    
+}
+.centro4 {
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 .direccion {
@@ -161,7 +167,10 @@
     width: 33%;
 }
 .ancho4 {
-    width: 80%;
+    width: 70%;
+}
+.ancho5 {
+    width: 70%;
 }
 
 
@@ -246,6 +255,9 @@
 }
 .imagenPerfil {
     height: inherit;
+}
+.imagenDulce {
+    width: 100%;
 }
 .imagenFilo {
     width: 100%;
@@ -419,11 +431,16 @@
 }
 .espacio7 {
     padding: 20px;
-    margin-top: 5px;
+    margin-top: 25px;
 }
 .espacio8 {
     padding-bottom: 50px;
 
+}
+.espacioFilo {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 
@@ -445,6 +462,9 @@
 .margen5 {
     margin-top: 30px !important;
     margin-bottom: 30px !important;
+}
+.margen6 {
+    margin-bottom: 60px !important;
 }
 
 
