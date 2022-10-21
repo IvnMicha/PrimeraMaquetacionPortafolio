@@ -32,14 +32,15 @@
   <!--Titulo de la pagina-->
   <title>IvnMich - Portafolio</title>
 
-
 </head>
+
+
 
 
 <body class="pintura1">
 
   <!--MODAL BIENVENIDA-->
-  <div class="modal fade" id="myModa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content bordeC">
 
@@ -49,20 +50,31 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
 
-          <div class="row">
+          <div class="row g-2 justify-content-center margen2">
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 ">
-              <div class="box ">
-                <img src="images/Lrostro.png" alt="" class="imagen">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 letraT margen5">
+              <h1><b>¡Bienvenido!</b></h1>
+            </div>
+      
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 centro2">
+              <div class="ancho1 centro4">
+                <div class="ancho5">
+                  <img src="images/Icono.png" class="imagenDulce">
+                </div>
+              </div>
+              <div class="ancho1">
+                <div class="margen7">
+                  <h4>Bienvenido a mi portafolio web.</h4>
+                </div>
               </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 ">
-              <div class="box ">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat commodi magnam ea quia animi iure
-                  nostrum impedit voluptatum corporis nulla! Ad iure perspiciatis adipisci voluptatibus excepturi
-                  repellat
-                  optio expedita consectetur!</p>
+            <!--LINEA DE SEPARACION-->
+            <div class="row g-2 justify-content-center">
+              <div class="col-10 col-sm-10 col-md-3 col-lg-3 margen5">
+                <div type="button" data-bs-dismiss="modal" aria-label="Close">
+                  <button class="boton1">Continuar</button>
+                </div>
               </div>
             </div>
 
@@ -78,10 +90,9 @@
 
 
 
+
+
   <!--COMIENZO DE LA CABEZA DE LA PAGINA-->
-
-
-
   <header class="container-fluid pintura alto1" id="cabeza">
 
     <div class="row justify-content-center">
@@ -128,8 +139,7 @@
 
 
   <!--MODAL BOTON CONTACTO-->
-  <div class="modal fade" id="Contacto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="Contacto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content bordeC">
 
@@ -206,10 +216,7 @@
     </div>
   </div>
 
-
-
   <!--FINAL DE LA CABEZA DE LA PAGINA-->
-
 
 
 
@@ -244,58 +251,7 @@
   <!--FINAL DE BARRA DE NAVEGACION-->
 
 
-
-
-
-
-  <!-- MODAL IMAGEN KIROLEN -->
-  <div class="modal fade" id="ModalOjo" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header color4">
-          <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
-              <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
-            </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
-              <div>
-                <h3 class="textoT1 letra1">"Kirolen - Loomian legacy"</h3>
-                <p class="textoT2">IvnMich</p>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- MODAL IMAGEN OJO-->
-  <div class="modal fade" id="KirolenModal" tabindex="-1" aria-labelledby="KirolenModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="KirolenModalLabel">Ilustración ojo arcoiris</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-7">
-              <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
-            </div>
-            <div class="col-5">
-              <p><b>Tecnica:</b> Ilustracion Digital</p>
-              <p><b>Fecha:</b> 2 de Septiembre, 2022</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
 
   <!--INICIO DEL CONTENIDO DE LA PAGINA-->
@@ -313,84 +269,84 @@
 
           <!--1-->
           <div class="item ilustracion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalOjo">
               <img src="images/ilustracion/ojo.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--2-->
           <div class="item ilustracion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalKirolen">
               <img src="images/ilustracion/kirolen.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--3-->
           <div class="item ilustracion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#Modaljuego">
               <img src="images/ilustracion/juego.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--4-->
           <div class="item ilustracion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalGalaxia">
               <img src="images/ilustracion/galaxia.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--5-->
           <div class="item ilustracion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalOrion">
               <img src="images/ilustracion/orion.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--6-->
           <div class="item ilustracion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalYuka">
               <img src="images/ilustracion/yuka.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--7-->
           <div class="item ilustracion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalInuyasha">
               <img src="images/ilustracion/inuyasha.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--8-->
           <div class="item ilustracion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalYo">
               <img src="images/ilustracion/yo.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--9-->
           <div class="item ilustracion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalIglesia">
               <img src="images/ilustracion/iglesia.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--10-->
           <div class="item ilustracion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalGato">
               <img src="images/ilustracion/gato.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--11-->
           <div class="item ilustracion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalElfo">
               <img src="images/ilustracion/elfo.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--12-->
           <div class="item ilustracion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#Moda">
               <img src="images/ilustracion/elfo.jpg" alt="" class="img">
             </div>
           </div>
@@ -400,57 +356,57 @@
           <!--INICIO INVITACIONES-->
 
           <!--1-->
-          <div class="item invitacion borde2">
-            <div class="al borde2">
+          <div class="item invitacion">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalBestido">
               <img src="images/Invitacion/bestido.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--2-->
           <div class="item invitacion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalMameluco">
               <img src="images/Invitacion/mameluco.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--3-->
           <div class="item invitacion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalVirgen">
               <img src="images/Invitacion/virgen.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--4-->
           <div class="item invitacion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalPanda">
               <img src="images/Invitacion/panda.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--5-->
           <div class="item invitacion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalConejo">
               <img src="images/Invitacion/conejo.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--6-->
           <div class="item invitacion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalSpiderman">
               <img src="images/Invitacion/spiderman.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--7-->
           <div class="item invitacion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalLuna">
               <img src="images/Invitacion/luna.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--8-->
           <div class="item invitacion">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalElefante">
               <img src="images/Invitacion/elefante.jpg" alt="" class="img">
             </div>
           </div>
@@ -461,85 +417,36 @@
 
           <!--1-->
           <div class="item publicidad">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#Modal">
               <img src="images/ilustracion/ojo.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--2-->
           <div class="item publicidad">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#Modal">
               <img src="images/ilustracion/kirolen.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--3-->
           <div class="item publicidad">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#Modal">
               <img src="images/ilustracion/juego.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--4-->
           <div class="item publicidad">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#Modal">
               <img src="images/ilustracion/galaxia.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--5-->
           <div class="item publicidad">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#Modal">
               <img src="images/ilustracion/orion.jpg" alt="" class="img">
-            </div>
-          </div>
-
-          <!--6-->
-          <div class="item publicidad">
-            <div class="al">
-              <img src="images/ilustracion/yuka.jpg" alt="" class="img">
-            </div>
-          </div>
-
-          <!--7-->
-          <div class="item publicidad">
-            <div class="al">
-              <img src="images/ilustracion/inuyasha.jpg" alt="" class="img">
-            </div>
-          </div>
-
-          <!--8-->
-          <div class="item publicidad">
-            <div class="al">
-              <img src="images/ilustracion/yo.jpg" alt="" class="img">
-            </div>
-          </div>
-
-          <!--9-->
-          <div class="item publicidad">
-            <div class="al">
-              <img src="images/ilustracion/iglesia.jpg" alt="" class="img">
-            </div>
-          </div>
-
-          <!--10-->
-          <div class="item publicidad">
-            <div class="al">
-              <img src="images/ilustracion/gato.jpg" alt="" class="img">
-            </div>
-          </div>
-
-          <!--11-->
-          <div class="item publicidad">
-            <div class="al">
-              <img src="images/ilustracion/elfo.jpg" alt="" class="img">
-            </div>
-          </div>
-
-          <!--12-->
-          <div class="item publicidad">
-            <div class="al">
-              <img src="images/ilustracion/elfo.jpg" alt="" class="img">
             </div>
           </div>
 
@@ -549,35 +456,35 @@
 
           <!--1-->
           <div class="item fotografia">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalGalaxiaC">
               <img src="images/fotografia/galaxia.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--2-->
           <div class="item fotografia">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalBurbuja">
               <img src="images/fotografia/burbuja.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--3-->
           <div class="item fotografia">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalTinta">
               <img src="images/fotografia/tinta.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--4-->
           <div class="item fotografia">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalRepetir">
               <img src="images/fotografia/repeticion.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--5-->
           <div class="item fotografia">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#ModalCanica">
               <img src="images/fotografia/canica.jpg" alt="" class="img">
             </div>
           </div>
@@ -588,35 +495,35 @@
 
           <!--1-->
           <div class="item multimedia">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#Modal">
               <img src="images/Multimedia/lisa.gif" alt="" class="img">
             </div>
           </div>
 
           <!--2-->
           <div class="item multimedia">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#Modal">
               <img src="images/fotografia/burbuja.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--3-->
           <div class="item multimedia">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#Modal">
               <img src="images/fotografia/tinta.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--4-->
           <div class="item multimedia">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#Modal">
               <img src="images/fotografia/repeticion.jpg" alt="" class="img">
             </div>
           </div>
 
           <!--5-->
           <div class="item multimedia">
-            <div class="al">
+            <div class="al" type="button" data-bs-toggle="modal" data-bs-target="#Modal">
               <img src="images/fotografia/canica.jpg" alt="" class="img">
             </div>
           </div>
@@ -635,6 +542,956 @@
 
     <!--FIN CONTENEDOR DEL CONTENIDO PRINCIPAL DE LA PAGINA-->
   </div>
+
+
+
+
+
+<!-- ILUSTRACIONES -->
+
+<!-- MODAL IMAGEN OJO -->
+<div class="modal fade" id="ModalOjo" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+
+      <div class="modal-header color4">
+        <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+            <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+            <div>
+              <div class="letraT">
+                <h3><b>Kirolen - Loomian Legacy</b></h3>
+                <h5><i>(Bogota D,C.)</i></h5>
+              </div>
+              <div class="margen7">
+                <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL IMAGEN KIROLEN -->
+  <div class="modal fade" id="ModalKirolen" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+
+      <div class="modal-content">
+
+        <div class="modal-header color4">
+          <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+              <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+              <div>
+                <div class="letraT">
+                  <h3><b>Kirolen - Loomian Legacy</b></h3>
+                  <h5><i>(Bogota D,C.)</i></h5>
+                </div>
+                <div class="margen7">
+                  <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                  <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                  <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                  <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL IMAGEN JUEGO -->
+<div class="modal fade" id="Modaljuego" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+
+      <div class="modal-header color4">
+        <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+            <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+            <div>
+              <div class="letraT">
+                <h3><b>Kirolen - Loomian Legacy</b></h3>
+                <h5><i>(Bogota D,C.)</i></h5>
+              </div>
+              <div class="margen7">
+                <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL IMAGEN GALAXIA -->
+  <div class="modal fade" id="ModalGalaxia" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+
+      <div class="modal-content">
+
+        <div class="modal-header color4">
+          <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+              <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+              <div>
+                <div class="letraT">
+                  <h3><b>Kirolen - Loomian Legacy</b></h3>
+                  <h5><i>(Bogota D,C.)</i></h5>
+                </div>
+                <div class="margen7">
+                  <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                  <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                  <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                  <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL IMAGEN ORION -->
+<div class="modal fade" id="ModalOrion" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+
+      <div class="modal-header color4">
+        <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+            <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+            <div>
+              <div class="letraT">
+                <h3><b>Kirolen - Loomian Legacy</b></h3>
+                <h5><i>(Bogota D,C.)</i></h5>
+              </div>
+              <div class="margen7">
+                <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL IMAGEN YUKA -->
+  <div class="modal fade" id="ModalYuka" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+
+      <div class="modal-content">
+
+        <div class="modal-header color4">
+          <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+              <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+              <div>
+                <div class="letraT">
+                  <h3><b>Kirolen - Loomian Legacy</b></h3>
+                  <h5><i>(Bogota D,C.)</i></h5>
+                </div>
+                <div class="margen7">
+                  <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                  <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                  <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                  <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL IMAGEN INUYASHA -->
+<div class="modal fade" id="ModalInuyasha" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+
+      <div class="modal-header color4">
+        <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+            <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+            <div>
+              <div class="letraT">
+                <h3><b>Kirolen - Loomian Legacy</b></h3>
+                <h5><i>(Bogota D,C.)</i></h5>
+              </div>
+              <div class="margen7">
+                <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL IMAGEN YO -->
+  <div class="modal fade" id="ModalYo" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+
+      <div class="modal-content">
+
+        <div class="modal-header color4">
+          <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+              <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+              <div>
+                <div class="letraT">
+                  <h3><b>Kirolen - Loomian Legacy</b></h3>
+                  <h5><i>(Bogota D,C.)</i></h5>
+                </div>
+                <div class="margen7">
+                  <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                  <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                  <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                  <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL IMAGEN IGLESIA -->
+<div class="modal fade" id="ModalIglesia" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+
+      <div class="modal-header color4">
+        <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+            <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+            <div>
+              <div class="letraT">
+                <h3><b>Kirolen - Loomian Legacy</b></h3>
+                <h5><i>(Bogota D,C.)</i></h5>
+              </div>
+              <div class="margen7">
+                <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL IMAGEN GATO -->
+  <div class="modal fade" id="ModalGato" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+
+      <div class="modal-content">
+
+        <div class="modal-header color4">
+          <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+              <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+              <div>
+                <div class="letraT">
+                  <h3><b>Kirolen - Loomian Legacy</b></h3>
+                  <h5><i>(Bogota D,C.)</i></h5>
+                </div>
+                <div class="margen7">
+                  <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                  <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                  <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                  <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL IMAGEN ELFO -->
+<div class="modal fade" id="ModalElfo" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+
+      <div class="modal-header color4">
+        <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+            <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+            <div>
+              <div class="letraT">
+                <h3><b>Kirolen - Loomian Legacy</b></h3>
+                <h5><i>(Bogota D,C.)</i></h5>
+              </div>
+              <div class="margen7">
+                <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- INVITACIONES -->
+
+<!-- MODAL IMAGEN BESTIDO -->
+<div class="modal fade" id="ModalBestido" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+
+      <div class="modal-header color4">
+        <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+            <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+            <div>
+              <div class="letraT">
+                <h3><b>Kirolen - Loomian Legacy</b></h3>
+                <h5><i>(Bogota D,C.)</i></h5>
+              </div>
+              <div class="margen7">
+                <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL IMAGEN MAMELUCO -->
+  <div class="modal fade" id="ModalMameluco" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+
+      <div class="modal-content">
+
+        <div class="modal-header color4">
+          <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+              <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+              <div>
+                <div class="letraT">
+                  <h3><b>Kirolen - Loomian Legacy</b></h3>
+                  <h5><i>(Bogota D,C.)</i></h5>
+                </div>
+                <div class="margen7">
+                  <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                  <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                  <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                  <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL IMAGEN VIRGEN -->
+<div class="modal fade" id="ModalVirgen" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+
+      <div class="modal-header color4">
+        <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+            <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+            <div>
+              <div class="letraT">
+                <h3><b>Kirolen - Loomian Legacy</b></h3>
+                <h5><i>(Bogota D,C.)</i></h5>
+              </div>
+              <div class="margen7">
+                <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL IMAGEN PANDA -->
+  <div class="modal fade" id="ModalPanda" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+
+      <div class="modal-content">
+
+        <div class="modal-header color4">
+          <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+              <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+              <div>
+                <div class="letraT">
+                  <h3><b>Kirolen - Loomian Legacy</b></h3>
+                  <h5><i>(Bogota D,C.)</i></h5>
+                </div>
+                <div class="margen7">
+                  <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                  <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                  <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                  <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL IMAGEN CONEJO -->
+<div class="modal fade" id="ModalConejo" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+
+      <div class="modal-header color4">
+        <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+            <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+            <div>
+              <div class="letraT">
+                <h3><b>Kirolen - Loomian Legacy</b></h3>
+                <h5><i>(Bogota D,C.)</i></h5>
+              </div>
+              <div class="margen7">
+                <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL IMAGEN SPIDERMAN -->
+  <div class="modal fade" id="ModalSpiderman" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+
+      <div class="modal-content">
+
+        <div class="modal-header color4">
+          <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+              <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+              <div>
+                <div class="letraT">
+                  <h3><b>Kirolen - Loomian Legacy</b></h3>
+                  <h5><i>(Bogota D,C.)</i></h5>
+                </div>
+                <div class="margen7">
+                  <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                  <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                  <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                  <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL IMAGEN LUNA -->
+<div class="modal fade" id="ModalLuna" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+
+      <div class="modal-header color4">
+        <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+            <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+            <div>
+              <div class="letraT">
+                <h3><b>Kirolen - Loomian Legacy</b></h3>
+                <h5><i>(Bogota D,C.)</i></h5>
+              </div>
+              <div class="margen7">
+                <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL IMAGEN ELEFANTE -->
+  <div class="modal fade" id="ModalElefante" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+
+      <div class="modal-content">
+
+        <div class="modal-header color4">
+          <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+              <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+              <div>
+                <div class="letraT">
+                  <h3><b>Kirolen - Loomian Legacy</b></h3>
+                  <h5><i>(Bogota D,C.)</i></h5>
+                </div>
+                <div class="margen7">
+                  <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                  <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                  <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                  <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- INVITACIONES -->
+
+<!-- MODAL IMAGEN GALAXIA TINTAS -->
+<div class="modal fade" id="ModalGalaxiaC" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+
+      <div class="modal-header color4">
+        <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+            <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+            <div>
+              <div class="letraT">
+                <h3><b>Kirolen - Loomian Legacy</b></h3>
+                <h5><i>(Bogota D,C.)</i></h5>
+              </div>
+              <div class="margen7">
+                <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL IMAGEN BURBUJA -->
+  <div class="modal fade" id="ModalBurbuja" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+
+      <div class="modal-content">
+
+        <div class="modal-header color4">
+          <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+              <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+              <div>
+                <div class="letraT">
+                  <h3><b>Kirolen - Loomian Legacy</b></h3>
+                  <h5><i>(Bogota D,C.)</i></h5>
+                </div>
+                <div class="margen7">
+                  <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                  <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                  <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                  <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL IMAGEN TINTA -->
+<div class="modal fade" id="ModalTinta" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+
+      <div class="modal-header color4">
+        <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+            <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+            <div>
+              <div class="letraT">
+                <h3><b>Kirolen - Loomian Legacy</b></h3>
+                <h5><i>(Bogota D,C.)</i></h5>
+              </div>
+              <div class="margen7">
+                <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL IMAGEN REPETIR -->
+  <div class="modal fade" id="ModalRepetir" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+
+      <div class="modal-content">
+
+        <div class="modal-header color4">
+          <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+              <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+              <div>
+                <div class="letraT">
+                  <h3><b>Kirolen - Loomian Legacy</b></h3>
+                  <h5><i>(Bogota D,C.)</i></h5>
+                </div>
+                <div class="margen7">
+                  <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                  <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                  <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                  <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL IMAGEN CANICAS -->
+<div class="modal fade" id="ModalCanica" tabindex="-1" aria-labelledby="OjoModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+
+      <div class="modal-header color4">
+        <p class="modal-title letra1 textoT" id="OjoModalLabel">Ilustración Digital - Kirolen</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+            <img src="images/ilustracion/kirolen.jpg" alt="" class="imagen2">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+            <div>
+              <div class="letraT">
+                <h3><b>Kirolen - Loomian Legacy</b></h3>
+                <h5><i>(Bogota D,C.)</i></h5>
+              </div>
+              <div class="margen7">
+                <h6><b>Titulo:</b> Kirolen - Loomian legacy</h6>
+                <h6><b>Fecha:</b> 14 de Agosto, 2022</h6>
+                <h6><b>Descripción:</b> Ilustración de Kirolen de loomian legacy junto a mi en el Valle de los dulces. Loomian legacy es un mapa estilo Pokemon perteneciente al famoso juego de Roblox.</h6>
+                <h6><b>Técnica:</b> Ilustración digital realizada en Adobe Illustrator.</h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 
 
