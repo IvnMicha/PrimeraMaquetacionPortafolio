@@ -26,6 +26,15 @@
 .color5 {
     background-color: green;
 }
+.colorB {
+    background-color: rgb(55, 27, 64) !important;
+}
+.colorB1 {
+    border: 1px rgb(55, 27, 64) solid !important;
+    background-color: white !important;
+    width: 80% !important;
+}
+
 
 
 .letra {
@@ -77,6 +86,10 @@
     justify-content: center;
     align-items:center;
 }
+.centro5 {
+    display: flex;
+    flex-direction:row;
+}
 
 .direccion {
     display: flex;
@@ -123,6 +136,30 @@
 .lista {
     list-style-image: url(../images/punto.png);
 }
+.fondoTEdu {
+    background-color: rgb(239, 168, 34);
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 65px;
+    margin-right: 65px;
+    text-align: center;
+}
+.fondoHdes {
+    background-color: rgb(239, 168, 34);
+    color: white;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-left: 65px;
+    margin-right: 65px;
+    text-align: center;
+}
+.fondoAcoT {
+    background-color: gainsboro;
+}
 
 
 
@@ -150,10 +187,22 @@
     height: 2400px;
 }
 .alto9 {
-    height: 550px;
+    height: 620px;
+}
+.alto10 {
+    height: 720px;
 }
 .altoSoy {
     height: 2000px;
+}
+.altoPerfilC {
+    height: 2680px;
+}
+.altoEduca {
+    height: 2250px;
+}
+.altoHabiliD {
+    height: 2180px;
 }
 
 
@@ -172,6 +221,13 @@
 .ancho5 {
     width: 70%;
 }
+.ancho6 {
+    width: 90%;
+}
+.anchoI {
+    height: 100px;
+}
+
 
 
 .textoT {
@@ -402,6 +458,13 @@
     transform: scale(1, 1);
 }
 
+.boton5 {
+    border-radius: 10px;
+    border: 1px rgb(190, 187, 187) solid !important;
+    color:rgb(55, 27, 64) !important;
+}
+
+
 
 
 /*ESPACIOS*/
@@ -465,6 +528,13 @@
 }
 .margen6 {
     margin-bottom: 60px !important;
+}
+.margen7 {
+    margin: 30px;
+}
+.margen8 {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
@@ -867,7 +937,6 @@
     padding: 10px 15px;
     border-radius: 10px;
     border: 1px #F07814 solid;
-    
     cursor: pointer;
     transition: all .5s ease;
 }
@@ -911,7 +980,7 @@ li.active {
 .conoceme {
     width: 100% !important;
 }
-.conoceme .item1 {
+.item1 {
     width: 100% !important;
     float: left;
     margin-bottom: 5px;
