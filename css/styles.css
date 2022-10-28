@@ -536,6 +536,9 @@
     margin-left: 20px;
     margin-right: 20px;
 }
+.margen9 {
+    margin: 20px;
+}
 
 
 
@@ -665,8 +668,8 @@
         display: flex;
         justify-content: center;
     }
-    .img {
-        width: 140% !important;
+    .portafolio-menu {
+        font-size: 0.7rem;
     }
 }
 
@@ -921,7 +924,7 @@
 
 
 /* ---- Prueba isotope plugin---- */
-.container {
+.containerK {
     width: 90%;
     margin: 10px auto;
 }
@@ -947,8 +950,11 @@
 
 .portafolio-item {
     width: 100%;
+    float: left;
+    margin-bottom: 5px;
+    padding: 15px;
 }
-.portafolio-item .item {
+.item {
     width: 303px;
     float: left;
     margin-bottom: 5px;
