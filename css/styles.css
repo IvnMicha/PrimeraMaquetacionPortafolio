@@ -120,11 +120,7 @@
     animation: slideInDown;
     animation-duration: 2s; 
 }
-.pintura1 {
-    background-image: url(../images/fondo-PC.png);
-    background-attachment: fixed;
-    background-size: cover;
-}
+
 .colorfondo1 {
     animation: fadeUp;
     animation-duration: 2s;
@@ -964,13 +960,24 @@
     border-radius: 10px;
     height: 273px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .img {
     width: 100% !important;
     transition: all 0.6s ease;
-    
 }
 .img:hover {
+    transition: all 0.6s ease;
+    transform: scale(1.1);
+    filter: brightness(60%);
+}
+.img1 {
+    width: 112% !important;
+    transition: all 0.6s ease;
+}
+.img1:hover {
     transition: all 0.6s ease;
     transform: scale(1.1);
     filter: brightness(60%);
