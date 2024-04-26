@@ -506,9 +506,6 @@
 .margen {
     margin: 10px;
 }
-.margen2 {
-    margin-top: 25px;
-}
 .margen3 {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -516,7 +513,7 @@
     margin-right: 0px;
 }
 .margen4 {
-    margin-top: 100px;
+    margin-top: 25px;
 }
 .margen5 {
     margin-top: 30px !important;
@@ -556,7 +553,18 @@
 .grande {
     height: 2300px;
     overflow: hidden;
-} 
+}
+
+.linea1 {
+    border: 2px black solid;
+}
+.linea2 {
+    border: 2px rgb(189, 7, 7) solid;
+}
+.central {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 /*MEDIAS*/
@@ -667,6 +675,15 @@
     .portafolio-menu {
         font-size: 0.7rem;
     }
+
+
+    
+    .item {
+        width: 47% !important;
+    }
+    .al {
+        height: 100% !important;
+    }
 }
 
 
@@ -733,16 +750,13 @@
         display: flex;
         justify-content: center;
     }
-    .portafolio-item .item {
-        width: 503px !important;
-        float: left;
-        margin-bottom: 5px;
-        padding: 15px;
+
+
+    .item {
+        width: 48% !important;
     }
     .al {
-        border-radius: 10px;
-        height: 473px !important;
-        overflow: hidden;
+        height: 100% !important;
     }
 }
 
@@ -800,6 +814,14 @@
         display: flex;
         justify-content: center;
     }
+
+    /*Contenido*/
+    .item {
+        width: 48% !important;
+    }
+    .al {
+        height: 100% !important;
+    }
 }
 
 
@@ -855,6 +877,14 @@
     .altura {
         display: flex;
         justify-content: center;
+    }
+
+
+    .item {
+        width: 32% !important;
+    }
+    .al {
+        height: 100% !important;
     }
 }
 
@@ -912,6 +942,13 @@
         display: flex;
         justify-content: center;
     }
+
+    .item {
+        width: 24% !important;
+    }
+    .al {
+        height: 100% !important;
+    }
 }
 
 
@@ -946,18 +983,16 @@
 
 .portafolio-item {
     width: 100%;
-    float: left;
     margin-bottom: 5px;
-    padding: 15px;
+    padding: 10px;
 }
 .item {
     width: 303px;
-    float: left;
     margin-bottom: 5px;
     padding: 15px;
 }
 .al {
-    border-radius: 10px;
+    border-radius: 15px;
     height: 273px;
     overflow: hidden;
     display: flex;
@@ -999,4 +1034,6 @@ li.active {
     margin-bottom: 5px;
     padding: 15px;
 }
+
+
 
