@@ -113,12 +113,13 @@
 
 .pintura {
     background-image: url(../images/Pintura.png);
+    background-color: white;
     background-size: 1300px;
     background-repeat: repeat-x;
     display: inline-block;
     margin: 0 0.5rem;
     animation: slideInDown;
-    animation-duration: 2s; 
+    animation-duration: 2s;
 }
 
 .colorfondo1 {
@@ -164,6 +165,33 @@
 .alto1 {
     height: 300px;
 }
+
+
+
+
+.b {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+}
+.b1 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 245px;
+    z-index: 1;
+}
+.cole {
+    background-color: white;
+}
+.cole1 {
+    background: linear-gradient(to top, transparent, white 20%);
+}
+
+
+
+
+
 .alto2 {
     height: 250px;
 }
@@ -582,6 +610,9 @@
         background-image: url(../images/PinturaMo.png);
         background-size: 515px !important;
     }
+    .b1 {
+        top: 275px !important;
+    }
     .alto5 {
         display: flex;
         justify-content: center;
@@ -701,6 +732,9 @@
         background-image: url(../images/PinturaMo.png);
         background-size: 745px !important;
     }
+    .b1 {
+        top: 395px !important;
+    }
     .alto5 {
         display: flex;
         justify-content: center;
@@ -773,6 +807,9 @@
     .pintura {
         background-image: url(../images/PinturaMo.png);
         background-size: 460px !important;
+    }
+    .b1 {
+        top: 255px !important;
     }
     .alto5 {
         display: flex;
