@@ -169,27 +169,6 @@
 
 
 
-.b {
-    position: -webkit-sticky;
-    position: sticky;
-    top: -1px;
-    z-index: 1;
-}
-.b1 {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 245px;
-    z-index: 1;
-}
-.cole {
-    background-color: white;
-}
-.cole1 {
-    background: linear-gradient(to top, transparent, white 20%);
-}
-
-
-
 
 
 .alto2 {
